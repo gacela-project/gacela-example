@@ -1,0 +1,46 @@
+{
+    "description": "A basic PHP scaffolding",
+    "name": "chemaclass/php-scaffolding",
+    "type": "project",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "scaffolding"
+    ],
+    "require": {
+        "php": ">=7.4",
+        "gacela-project/gacela": "dev-master"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "symfony/var-dumper": "^5.2",
+        "phpunit/phpunit": "^9.5",
+        "vimeo/psalm": "^4.6",
+        "friendsofphp/php-cs-fixer": "^2.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test-all": [
+            "@test-quality",
+            "@test-unit"
+        ],
+        "test-quality": [
+            "@csrun",
+            "@psalm"
+        ],
+        "test-unit": "./vendor/bin/phpunit",
+        "test-coverage": "XDEBUG_MODE=coverage ./vendor/bin/phpunit --coverage-html coverage",
+        "psalm": "./vendor/bin/psalm",
+        "csfix": "./vendor/bin/php-cs-fixer fix",
+        "csrun": "./vendor/bin/php-cs-fixer fix --dry-run"
+    }
+}
