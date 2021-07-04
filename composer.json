@@ -9,7 +9,7 @@
     ],
     "require": {
         "php": ">=7.4",
-        "gacela-project/gacela": "dev-master"
+        "gacela-project/gacela": "0.3.0"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
