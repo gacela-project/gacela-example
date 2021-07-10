@@ -9,7 +9,7 @@
     ],
     "require": {
         "php": ">=7.4",
-        "gacela-project/gacela": "0.3.0"
+        "gacela-project/gacela": "^0.4"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
@@ -40,7 +40,7 @@
         "test-unit": "./vendor/bin/phpunit",
         "test-coverage": "XDEBUG_MODE=coverage ./vendor/bin/phpunit --coverage-html coverage",
         "psalm": "./vendor/bin/psalm",
-        "csfix": "./vendor/bin/php-cs-fixer fix",
-        "csrun": "./vendor/bin/php-cs-fixer fix --dry-run"
+        "csfix": "./vendor/bin/php-cs-fixer --allow-risky=yes fix",
+        "csrun": "./vendor/bin/php-cs-fixer --allow-risky=yes fix --dry-run"
     }
 }

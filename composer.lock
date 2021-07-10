@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be780bf5b42687b24f218819c5a4ca0a",
+    "content-hash": "ef7b30008538e7fd6086ca3ac49a329d",
     "packages": [
         {
             "name": "gacela-project/gacela",
-            "version": "0.3.0",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gacela-project/gacela.git",
-                "reference": "1707579dc202123e6730485f5320cc980c4499ab"
+                "reference": "e425e2a4f2f7b6e38088cb0bcef4ef9e2494b756"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/1707579dc202123e6730485f5320cc980c4499ab",
-                "reference": "1707579dc202123e6730485f5320cc980c4499ab",
+                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/e425e2a4f2f7b6e38088cb0bcef4ef9e2494b756",
+                "reference": "e425e2a4f2f7b6e38088cb0bcef4ef9e2494b756",
                 "shasum": ""
             },
             "require": {
@@ -63,9 +63,9 @@
             ],
             "support": {
                 "issues": "https://github.com/gacela-project/gacela/issues",
-                "source": "https://github.com/gacela-project/gacela/tree/0.3.0"
+                "source": "https://github.com/gacela-project/gacela/tree/0.4.0"
             },
-            "time": "2021-07-04T14:06:20+00:00"
+            "time": "2021-07-10T12:39:06+00:00"
         },
         {
             "name": "psr/container",

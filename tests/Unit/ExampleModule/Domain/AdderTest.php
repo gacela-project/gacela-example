@@ -13,7 +13,7 @@ final class AdderTest extends TestCase
     /**
      * @dataProvider providerAdd
      */
-    public function testItCanAdd(int $expected, array $numbers): void
+    public function test_it_can_add(int $expected, array $numbers): void
     {
         $facade = new Adder();
 
