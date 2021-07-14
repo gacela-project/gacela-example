@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef7b30008538e7fd6086ca3ac49a329d",
+    "content-hash": "ae707ac1b26ebd2c1ed77d9728d27db6",
     "packages": [
         {
             "name": "gacela-project/gacela",
-            "version": "0.4.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gacela-project/gacela.git",
-                "reference": "e425e2a4f2f7b6e38088cb0bcef4ef9e2494b756"
+                "reference": "391939f7cbf7f0a253c3cc215041608bc68ed4b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/e425e2a4f2f7b6e38088cb0bcef4ef9e2494b756",
-                "reference": "e425e2a4f2f7b6e38088cb0bcef4ef9e2494b756",
+                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/391939f7cbf7f0a253c3cc215041608bc68ed4b5",
+                "reference": "391939f7cbf7f0a253c3cc215041608bc68ed4b5",
                 "shasum": ""
             },
             "require": {
@@ -32,6 +32,7 @@
                 "symfony/var-dumper": "^5.3",
                 "vimeo/psalm": "^4.6"
             },
+            "default-branch": true,
             "bin": [
                 "gacela"
             ],
@@ -63,9 +64,9 @@
             ],
             "support": {
                 "issues": "https://github.com/gacela-project/gacela/issues",
-                "source": "https://github.com/gacela-project/gacela/tree/0.4.0"
+                "source": "https://github.com/gacela-project/gacela/tree/master"
             },
-            "time": "2021-07-10T12:39:06+00:00"
+            "time": "2021-07-14T11:56:19+00:00"
         },
         {
             "name": "psr/container",
@@ -5280,6 +5281,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "gacela-project/gacela": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,

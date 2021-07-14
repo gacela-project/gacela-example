@@ -13,7 +13,7 @@ final class ExampleModuleFacadeTest extends TestCase
 {
     public function setUp(): void
     {
-        Config::setApplicationRootDir(__DIR__);
+        Config::getInstance()->init(__DIR__);
     }
 
     /**

@@ -19,13 +19,10 @@ require dirname(__DIR__) . '/vendor/autoload.php';
  *   "path": "config/*.custom"
  * }
  */
-Config::getInstance()->setConfigReaders([
+Config::setConfigReaders([
     'php' => new PhpConfigReader(),
     'custom' => new CustomConfigReader(),
 ]);
-
-// After setting new config readers you have to initialize the config
-Config::getInstance()->init();
 
 $facade = new Facade();
 $sum = $facade->add(1, 2, 3);
