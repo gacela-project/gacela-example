@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\ExampleModule\Domain;
+namespace App\Adder\Domain;
 
 interface AdderInterface
 {

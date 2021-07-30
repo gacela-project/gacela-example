@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Tests\Unit\ExampleModule\Domain;
 
-use App\ExampleModule\Domain\Adder;
+use App\Adder\Domain\Adder;
 use Generator;
 use PHPUnit\Framework\TestCase;
 

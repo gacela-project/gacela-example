@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\ExampleModule;
+namespace App\Adder;
 
-use App\ExampleModule\Domain\Adder;
-use App\ExampleModule\Domain\AdderInterface;
+use App\Adder\Domain\Adder;
+use App\Adder\Domain\AdderInterface;
 use Gacela\Framework\AbstractFactory;
 
 /**

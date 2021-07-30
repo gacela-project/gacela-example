@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\ExampleModule;
+namespace App\Adder;
 
 use Gacela\Framework\AbstractFacade;
 

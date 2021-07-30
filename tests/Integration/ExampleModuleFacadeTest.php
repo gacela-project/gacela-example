@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Tests\Integration;
 
-use App\ExampleModule\Facade;
+use App\Adder\Facade;
 use Gacela\Framework\Config;
 use Generator;
 use PHPUnit\Framework\TestCase;
