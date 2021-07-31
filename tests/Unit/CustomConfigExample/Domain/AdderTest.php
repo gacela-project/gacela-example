@@ -2,26 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Tests\Integration;
+namespace Tests\Unit\CustomConfigExample\Domain;
 
-use App\Adder\Facade;
-use Gacela\Framework\Config;
+use App\CustomConfigExample\Domain\Adder;
 use Generator;
 use PHPUnit\Framework\TestCase;
 
-final class ExampleModuleFacadeTest extends TestCase
+final class AdderTest extends TestCase
 {
-    public function setUp(): void
-    {
-        Config::getInstance()->init(__DIR__);
-    }
-
     /**
      * @dataProvider providerAdd
      */
     public function test_it_can_add(int $expected, array $numbers): void
     {
-        $facade = new Facade();
+        $facade = new Adder();
 
         self::assertSame($expected, $facade->add(...$numbers));
     }

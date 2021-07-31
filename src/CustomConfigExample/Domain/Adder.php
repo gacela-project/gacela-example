@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Adder\Domain;
+namespace App\CustomConfigExample\Domain;
 
-final class Adder implements AdderInterface
+final class Adder
 {
     private int $baseAdderNumber;
 

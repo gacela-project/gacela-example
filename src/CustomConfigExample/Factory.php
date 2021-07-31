@@ -2,10 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Adder;
+namespace App\CustomConfigExample;
 
-use App\Adder\Domain\Adder;
-use App\Adder\Domain\AdderInterface;
+use App\CustomConfigExample\Domain\Adder;
 use Gacela\Framework\AbstractFactory;
 
 /**
@@ -13,7 +12,7 @@ use Gacela\Framework\AbstractFactory;
  */
 final class Factory extends AbstractFactory
 {
-    public function createAdder(): AdderInterface
+    public function createAdder(): Adder
     {
         return new Adder(
             $this->getConfig()->getBaseAdderNumber()
