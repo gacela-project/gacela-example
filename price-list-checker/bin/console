@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+require dirname(__DIR__) . '/vendor/autoload.php';
+
+use App\PriceListChecker\PriceListCheckerFactory;
+use Gacela\Framework\Config;
+use Symfony\Component\Console\Application;
+
+Config::getInstance()->setApplicationRootDir(dirname(__DIR__));
+
+$commandFactory = new PriceListCheckerFactory();
+
+$application = new Application();
+$application->add($commandFactory->createPriceListCheckerCommand());
+$application->run();

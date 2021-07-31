@@ -1,4 +1,4 @@
-#!/usr/local/bin/php
+#!/usr/bin/env php
 <?php
 
 declare(strict_types=1);
@@ -7,7 +7,7 @@ use App\CustomConfigExample\Facade as CustomConfigExampleFacade;
 use Gacela\Framework\Config;
 use Gacela\Framework\Config\ConfigReaderInterface;
 
-require __DIR__ . '/vendor/autoload.php';
+require dirname(__DIR__) . '/vendor/autoload.php';
 
 /*
  * This is an example of how can you create your own config reader.
@@ -39,14 +39,28 @@ Config::setConfigReaders([
     },
 ]);
 
-# script usage: `php example/adder.php 1 2 3 4 5`
-array_shift($argv);
-$numbers = array_map(
-    static fn (string $n): int => (int) $n,
-    array_values($argv)
-);
+# script usage: `bin/add 1 2 3 4 5`
+# It will start adding from the number specified in the config "base-adder-number = NNN"
+# You're using a custom config reader. See above: Config::setConfigReaders(...)
 
+$numbers = getNumbersFromInput($argv);
 $facade = new CustomConfigExampleFacade();
 $sum = $facade->add(...$numbers);
 
 print "The sum: {$sum}" . PHP_EOL;
+
+/** @return list<int> */
+function getNumbersFromInput(array $input): array
+{
+    array_shift($input);
+
+    return array_map(
+        static fn(string $n): int => (int)$n,
+        array_values($input)
+    );
+}
+
+
+
+
+
