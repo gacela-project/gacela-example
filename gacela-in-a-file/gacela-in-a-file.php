@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 # A Gacela module example using anonymous classes
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 use Gacela\Framework\AbstractConfig;
 use Gacela\Framework\AbstractDependencyProvider;

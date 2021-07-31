@@ -1,6 +1,6 @@
 # Gacela Example
 
-This is an example of a Module using [Gacela Framework](http://gacela-project.com/).
+In this repo you can find different examples of usages of Modules using [Gacela Framework](http://gacela-project.com/).
 
 ### Basic Gacela structure
 

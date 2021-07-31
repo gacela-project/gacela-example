@@ -9,6 +9,7 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 final class SpamChecker
 {
     private HttpClientInterface $client;
+
     private string $endpoint;
 
     public function __construct(

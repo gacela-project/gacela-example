@@ -7,7 +7,7 @@ use App\CustomConfigExample\Facade as CustomConfigExampleFacade;
 use Gacela\Framework\Config;
 use Gacela\Framework\Config\ConfigReaderInterface;
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 /*
  * This is an example of how can you create your own config reader.
@@ -42,7 +42,7 @@ Config::setConfigReaders([
 # script usage: `php example/adder.php 1 2 3 4 5`
 array_shift($argv);
 $numbers = array_map(
-    static fn (string $n): int => (int)$n,
+    static fn (string $n): int => (int) $n,
     array_values($argv)
 );
 
