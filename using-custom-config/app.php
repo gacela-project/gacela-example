@@ -7,7 +7,7 @@ use App\CustomConfigExample\Facade as CustomConfigExampleFacade;
 use Gacela\Framework\Config;
 use Gacela\Framework\Config\ConfigReaderInterface;
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
 /*
  * This is an example of how can you create your own config reader.

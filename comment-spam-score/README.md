@@ -1,7 +1,9 @@
-# Comment spam score
+# Comment Spam Score
 
-An example of a simple cli-app using Symfony HttpClient in a domain service that uses `rest.akismet` endpoint.
+Level: easy
+
+An example of a simple cli-app that uses Symfony HttpClient in a domain service.
 
 ## Usage
 
-> bin/console
+> php app.php
