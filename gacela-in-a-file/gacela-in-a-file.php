@@ -17,7 +17,6 @@ $contextName = basename(__FILE__, '.php');
 
 AbstractClassResolver::addAnonymousGlobal(
     $contextName,
-    'Config',
     new class() extends AbstractConfig {
         /**
          * @return int[]
@@ -31,7 +30,6 @@ AbstractClassResolver::addAnonymousGlobal(
 
 AbstractClassResolver::addAnonymousGlobal(
     $contextName,
-    'DependencyProvider',
     new class() extends AbstractDependencyProvider {
         public function provideModuleDependencies(Container $container): void
         {
@@ -47,7 +45,6 @@ AbstractClassResolver::addAnonymousGlobal(
 
 AbstractClassResolver::addAnonymousGlobal(
     $contextName,
-    'Factory',
     new class() extends AbstractFactory {
         /**
          * @return int[]

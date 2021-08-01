@@ -1,6 +1,6 @@
 # Using a custom config
 
-Level: easy
+Level: medium
 
 An example of how can you use a custom config in Gacela
 
