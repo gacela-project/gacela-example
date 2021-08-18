@@ -11,8 +11,8 @@ In this repo you can find different examples of usages of Modules using [Gacela 
 
 ```bash
 application-name
-├── gacela.json
-├── config // Default config behaviour. You can change it in `gacela.json`
+├── gacela.php
+├── config // Default config behaviour. You can change it in `gacela.php`
 │   ├── local.php
 │   └── default.php
 │

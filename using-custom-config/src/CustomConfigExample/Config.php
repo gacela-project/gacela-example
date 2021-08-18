@@ -10,6 +10,6 @@ final class Config extends AbstractConfig
 {
     public function getBaseAdderNumber(): int
     {
-        return (int) $this->get('base-adder-number', 0);
+        return (int) $this->get('base-adder-number');
     }
 }
