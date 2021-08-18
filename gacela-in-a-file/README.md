@@ -6,7 +6,7 @@ An example of how can you use all Gacela components in a single file for prototy
 
 ## Usage
 
-> php gacela-in-a-file.php
+> php app.php
 
 ### Tech details
 
