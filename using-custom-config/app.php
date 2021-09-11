@@ -39,7 +39,7 @@ Config::setConfigReaders([
     },
 ]);
 
-# script usage: `bin/add 1 2 3 4 5`
+# script usage: `app.php 1 2 3 4 5`
 # It will start adding from the number specified in the config "base-adder-number = NNN"
 # You're using a custom config reader. See above: Config::setConfigReaders(...)
 
