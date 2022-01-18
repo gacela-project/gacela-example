@@ -39,5 +39,10 @@
         "psalm": "./vendor/bin/psalm",
         "csfix": "./vendor/bin/php-cs-fixer fix",
         "csrun": "./vendor/bin/php-cs-fixer fix --dry-run"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
     }
 }
