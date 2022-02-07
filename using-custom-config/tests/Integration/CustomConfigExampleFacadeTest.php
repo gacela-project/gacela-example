@@ -6,6 +6,7 @@ namespace Tests\Integration;
 
 use App\CustomConfigExample\Facade as CustomConfigExampleFacade;
 use Gacela\Framework\Config;
+use Gacela\Framework\Gacela;
 use Generator;
 use PHPUnit\Framework\TestCase;
 
@@ -13,7 +14,15 @@ final class CustomConfigExampleFacadeTest extends TestCase
 {
     public function setUp(): void
     {
-        Config::getInstance()->init(__DIR__);
+        Gacela::bootstrap(__DIR__, [
+            'config' => [
+                'type' => 'env',
+                'path' => '.env',
+            ],
+            'config-readers' => [
+                'env' => new Config\ConfigReader\EnvConfigReader(),
+            ],
+        ]);
     }
 
     /**

@@ -6,10 +6,10 @@ declare(strict_types=1);
 require dirname(__DIR__) . '/vendor/autoload.php';
 
 use App\PriceListChecker\PriceListCheckerFactory;
-use Gacela\Framework\Config;
+use Gacela\Framework\Gacela;
 use Symfony\Component\Console\Application;
 
-Config::getInstance()->setApplicationRootDir(dirname(__DIR__));
+Gacela::bootstrap(__DIR__);
 
 $commandFactory = new PriceListCheckerFactory();
 

@@ -4,40 +4,26 @@
 declare(strict_types=1);
 
 use App\CustomConfigExample\Facade as CustomConfigExampleFacade;
-use Gacela\Framework\Config;
-use Gacela\Framework\Config\ConfigReaderInterface;
+use Gacela\Framework\Gacela;
 
 require __DIR__ . '/vendor/autoload.php';
 
-/*
- * This is an example of how can you create your own config reader.
- * The key 'custom' in the ConfigReaders is linked to that type in gacela.json:
- * {
- *   "type": "custom",
- *   "path": "config/*.custom"
- * }
- */
-Config::setConfigReaders([
-    'custom' => new class() implements ConfigReaderInterface {
-        public function read(string $absolutePath): array
-        {
-            $config = [];
-            $lines = file($absolutePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+# OPTION A: with gacela.php
+Gacela::bootstrap(__DIR__);
 
-            foreach ($lines as $line) {
-                [$name, $value] = explode('=', $line, 2);
-                $config[trim($name)] = trim($value);
-            }
-
-            return $config;
-        }
-
-        public function canRead(string $absolutePath): bool
-        {
-            return false !== mb_strpos($absolutePath, '.custom');
-        }
-    },
-]);
+# OPTION B: without gacela.php
+//Gacela::bootstrap(__DIR__, [
+//    'config' => [
+//        'type' => 'custom',
+//        'path' => 'config/*.custom',
+//    ],
+//    /*
+//     * This is an example of how can you create your own config reader.
+//     */
+//    'config-readers' => [
+//        'custom' => new CustomConfigReader(),
+//    ],
+//]);
 
 # script usage: `app.php 1 2 3 4 5`
 # It will start adding from the number specified in the config "base-adder-number = NNN"

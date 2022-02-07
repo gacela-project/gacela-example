@@ -9,8 +9,10 @@
     ],
     "require": {
         "php": ">=7.4",
-        "gacela-project/gacela": "dev-master"
+        "gacela-project/gacela": "dev-master",
+        "gacela-project/gacela-env-config-reader": "dev-master"
     },
+    "minimum-stability": "dev",
     "require-dev": {
         "roave/security-advisories": "dev-latest",
         "symfony/var-dumper": "^5.2",

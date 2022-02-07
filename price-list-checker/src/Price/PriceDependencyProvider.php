@@ -13,8 +13,6 @@ final class PriceDependencyProvider extends AbstractDependencyProvider
 {
     public const DB_CONNECTION = 'DB_CONNECTION';
 
-    public const CLI_PARAMS = 'CLI_PARAMS';
-
     public function provideModuleDependencies(Container $container): void
     {
         /** @var SharedFacadeInterface $sharedFacade */

@@ -7,6 +7,7 @@ namespace Tests\Integration\PriceListChecker;
 use App\PriceListChecker\Infrastructure\Notifier\Channel\FileGeneratorNotifier;
 use App\PriceListChecker\PriceListCheckerFactory;
 use Gacela\Framework\Config;
+use Gacela\Framework\Gacela;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -17,7 +18,7 @@ final class PriceListCheckerCommandTest extends TestCase
 
     public function setUp(): void
     {
-        Config::getInstance()->init(self::PROJECT_DIR);
+        Gacela::bootstrap(__DIR__);
     }
 
     public function test_generic_regression_test_using_default_db_connection(): void

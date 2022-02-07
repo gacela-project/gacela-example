@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-# A Gacela module example using anonymous classes
+#########################################################################
+# A full Gacela module example using anonymous classes in a single file #
+#########################################################################
 
 require __DIR__ . '/vendor/autoload.php';
 
@@ -15,11 +17,21 @@ use Gacela\Framework\Container\Container;
 
 $contextName = basename(__FILE__, '.php');
 
+interface ExternalGreeterInterface # will be used in the DependencyProvider
+{
+    public function greet(string $name): string;
+}
+
+interface InternalGreeterInterface # will be used in the Factory
+{
+    public function greet(string $name): string;
+}
+
 AbstractClassResolver::addAnonymousGlobal(
     $contextName,
     new class() extends AbstractConfig {
         /**
-         * @return int[]
+         * @return list<int>
          */
         public function getValues(): array
         {
@@ -33,7 +45,7 @@ AbstractClassResolver::addAnonymousGlobal(
     new class() extends AbstractDependencyProvider {
         public function provideModuleDependencies(Container $container): void
         {
-            $container->set('my-greeter', new class() {
+            $container->set('external-greeter', new class() implements ExternalGreeterInterface {
                 public function greet(string $name): string
                 {
                     return "Hello, $name!";
@@ -47,29 +59,29 @@ AbstractClassResolver::addAnonymousGlobal(
     $contextName,
     new class() extends AbstractFactory {
         /**
-         * @return int[]
+         * @return list<int>
          */
         public function getConfigValues(): array
         {
             return $this->getConfig()->getValues();
         }
 
-        public function createGreeter(): object
+        public function createGreeter(): InternalGreeterInterface
         {
-            /** @var object $myService */
-            $myService = $this->getProvidedDependency('my-greeter');
+            /** @var ExternalGreeterInterface $myService */
+            $externalGreeter = $this->getProvidedDependency('external-greeter');
 
-            return new class($myService) {
-                private object $myService;
+            return new class($externalGreeter) implements InternalGreeterInterface {
+                private ExternalGreeterInterface $externalGreeter;
 
-                public function __construct(object $myService)
+                public function __construct(ExternalGreeterInterface $externalGreeter)
                 {
-                    $this->myService = $myService;
+                    $this->externalGreeter = $externalGreeter;
                 }
 
                 public function greet(string $name): string
                 {
-                    return $this->myService->greet($name);
+                    return $this->externalGreeter->greet($name);
                 }
             };
         }

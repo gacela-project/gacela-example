@@ -1,6 +1,0 @@
-{
-  "config": {
-    "type": "env",
-    "path": ".env*"
-  }
-}
