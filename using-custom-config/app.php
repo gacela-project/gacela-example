@@ -16,12 +16,7 @@ Gacela::bootstrap(__DIR__);
 //    'config' => [
 //        'type' => 'custom',
 //        'path' => 'config/*.custom',
-//    ],
-//    /*
-//     * This is an example of how can you create your own config reader.
-//     */
-//    'config-readers' => [
-//        'custom' => new CustomConfigReader(),
+//        'reader' => CustomConfigReader::class,
 //    ],
 //]);
 

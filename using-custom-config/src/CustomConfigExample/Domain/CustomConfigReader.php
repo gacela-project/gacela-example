@@ -10,6 +10,10 @@ final class CustomConfigReader implements ConfigReaderInterface
 {
     public function read(string $absolutePath): array
     {
+        if (!$this->canRead($absolutePath)) {
+            return [];
+        }
+
         $config = [];
         $lines = file($absolutePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
@@ -21,7 +25,7 @@ final class CustomConfigReader implements ConfigReaderInterface
         return $config;
     }
 
-    public function canRead(string $absolutePath): bool
+    private function canRead(string $absolutePath): bool
     {
         return false !== mb_strpos($absolutePath, '.custom');
     }

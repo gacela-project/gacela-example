@@ -12,7 +12,7 @@ use Gacela\Framework\AbstractConfig;
 use Gacela\Framework\AbstractDependencyProvider;
 use Gacela\Framework\AbstractFacade;
 use Gacela\Framework\AbstractFactory;
-use Gacela\Framework\ClassResolver\AbstractClassResolver;
+use Gacela\Framework\ClassResolver\GlobalInstance\AnonymousGlobal;
 use Gacela\Framework\Container\Container;
 
 $contextName = basename(__FILE__, '.php');
@@ -27,7 +27,7 @@ interface InternalGreeterInterface # will be used in the Factory
     public function greet(string $name): string;
 }
 
-AbstractClassResolver::addAnonymousGlobal(
+AnonymousGlobal::addGlobal(
     $contextName,
     new class() extends AbstractConfig {
         /**
@@ -40,7 +40,7 @@ AbstractClassResolver::addAnonymousGlobal(
     }
 );
 
-AbstractClassResolver::addAnonymousGlobal(
+AnonymousGlobal::addGlobal(
     $contextName,
     new class() extends AbstractDependencyProvider {
         public function provideModuleDependencies(Container $container): void
@@ -55,7 +55,7 @@ AbstractClassResolver::addAnonymousGlobal(
     }
 );
 
-AbstractClassResolver::addAnonymousGlobal(
+AnonymousGlobal::addGlobal(
     $contextName,
     new class() extends AbstractFactory {
         /**

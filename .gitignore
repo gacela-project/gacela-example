@@ -1,5 +1,7 @@
+*.cache
+config/local.php
+
+.idea/
 data/
 coverage/
 vendor/
-config/local.php
-*.cache
