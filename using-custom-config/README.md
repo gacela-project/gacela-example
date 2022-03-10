@@ -10,8 +10,10 @@ An example of how can you use a custom config in Gacela
 
 ### Tech details
 
-In this example, I use `Config::setConfigReaders()` to define your own custom config reader.
-
-In the example I am using an anonymous class, but you can instantiate the concrete class that handles
-your config reading logic (if needed). The most important thing is that your config reader class
-must implement `Gacela\Framework\Config\ConfigReaderInterface`.
+With `gacela.php` you can define your own custom config reader.
+```php
+public function config(ConfigBuilder $configBuilder): void
+{
+    $configBuilder->add(CustomConfigReader::class, 'config/*.custom');
+}
+```
