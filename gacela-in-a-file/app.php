@@ -30,9 +30,7 @@ interface InternalGreeterInterface # will be used in the Factory
 AnonymousGlobal::addGlobal(
     $contextName,
     new class() extends AbstractConfig {
-        /**
-         * @return list<int>
-         */
+        /** @return list<int> */
         public function getValues(): array
         {
             return [1, 2, 3];
@@ -58,9 +56,7 @@ AnonymousGlobal::addGlobal(
 AnonymousGlobal::addGlobal(
     $contextName,
     new class() extends AbstractFactory {
-        /**
-         * @return list<int>
-         */
+        /** @return list<int> */
         public function getConfigValues(): array
         {
             return $this->getConfig()->getValues();
