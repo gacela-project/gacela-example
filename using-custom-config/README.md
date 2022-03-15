@@ -14,6 +14,6 @@ With `gacela.php` you can define your own custom config reader.
 ```php
 public function config(ConfigBuilder $configBuilder): void
 {
-    $configBuilder->add(CustomConfigReader::class, 'config/*.custom');
+    $configBuilder->add('config/*.custom', '', CustomConfigReader::class);
 }
 ```
