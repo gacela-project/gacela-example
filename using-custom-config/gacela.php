@@ -9,6 +9,6 @@ use Gacela\Framework\Config\GacelaConfigBuilder\ConfigBuilder;
 return static fn() => new class() extends AbstractConfigGacela {
     public function config(ConfigBuilder $configBuilder): void
     {
-        $configBuilder->add(CustomConfigReader::class, 'config/*.custom');
+        $configBuilder->add('config/*.custom', '', CustomConfigReader::class);
     }
 };

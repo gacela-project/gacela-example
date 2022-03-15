@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70015fb202ca84a0b1b12de2a928640a",
+    "content-hash": "961c560ff3bfbd3281eee18f067ad2d3",
     "packages": [
         {
             "name": "gacela-project/gacela",
-            "version": "dev-master",
+            "version": "0.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gacela-project/gacela.git",
-                "reference": "6c05444412ec543cb20e8dad72690215b2aaff4d"
+                "reference": "8da83656d93096c67674ea7ab96fe32abf712540"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/6c05444412ec543cb20e8dad72690215b2aaff4d",
-                "reference": "6c05444412ec543cb20e8dad72690215b2aaff4d",
+                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/8da83656d93096c67674ea7ab96fe32abf712540",
+                "reference": "8da83656d93096c67674ea7ab96fe32abf712540",
                 "shasum": ""
             },
             "require": {
@@ -26,7 +26,7 @@
                 "symfony/console": "^5.4"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.6",
+                "friendsofphp/php-cs-fixer": "^3.7",
                 "phpbench/phpbench": "^1.2",
                 "phpmetrics/phpmetrics": "^2.7",
                 "phpstan/phpstan": "^1.4",
@@ -38,7 +38,6 @@
                 "gacela-project/gacela-env-config-reader": "Allows to read .env config files",
                 "gacela-project/gacela-yaml-config-reader": "Allows to read yml/yaml config files"
             },
-            "default-branch": true,
             "bin": [
                 "gacela"
             ],
@@ -71,37 +70,36 @@
             ],
             "support": {
                 "issues": "https://github.com/gacela-project/gacela/issues",
-                "source": "https://github.com/gacela-project/gacela/tree/master"
+                "source": "https://github.com/gacela-project/gacela/tree/0.14.0"
             },
-            "time": "2022-03-10T13:03:26+00:00"
+            "time": "2022-03-14T18:10:11+00:00"
         },
         {
             "name": "gacela-project/gacela-env-config-reader",
-            "version": "dev-master",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gacela-project/gacela-env-config-reader.git",
-                "reference": "3090627f21950dacb504660609f15cf99bb65029"
+                "reference": "389f767ef73ea357a404ff6bee7e9802a02178b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gacela-project/gacela-env-config-reader/zipball/3090627f21950dacb504660609f15cf99bb65029",
-                "reference": "3090627f21950dacb504660609f15cf99bb65029",
+                "url": "https://api.github.com/repos/gacela-project/gacela-env-config-reader/zipball/389f767ef73ea357a404ff6bee7e9802a02178b4",
+                "reference": "389f767ef73ea357a404ff6bee7e9802a02178b4",
                 "shasum": ""
             },
             "require": {
-                "gacela-project/gacela": "dev-master",
+                "gacela-project/gacela": "^0.14",
                 "php": ">=7.4",
                 "symfony/dotenv": "^v5.4"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.5",
+                "friendsofphp/php-cs-fixer": "^3.7",
                 "phpstan/phpstan": "^1.4",
                 "phpunit/phpunit": "^9.5",
                 "symfony/var-dumper": "^5.4",
-                "vimeo/psalm": "^4.20"
+                "vimeo/psalm": "^4.22"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -130,9 +128,9 @@
             ],
             "support": {
                 "issues": "https://github.com/gacela-project/gacela-env-config-reader/issues",
-                "source": "https://github.com/gacela-project/gacela-env-config-reader/tree/master"
+                "source": "https://github.com/gacela-project/gacela-env-config-reader/tree/0.1.0"
             },
-            "time": "2022-02-06T15:06:39+00:00"
+            "time": "2022-03-14T20:02:01+00:00"
         },
         {
             "name": "psr/container",
@@ -1405,12 +1403,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "a951f614bd64dcd26137bc9b7b2637ddcfc57649"
+                "reference": "af3620d1ae999494d77fcbb772442f966f9a69e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/a951f614bd64dcd26137bc9b7b2637ddcfc57649",
-                "reference": "a951f614bd64dcd26137bc9b7b2637ddcfc57649",
+                "url": "https://api.github.com/repos/composer/semver/zipball/af3620d1ae999494d77fcbb772442f966f9a69e6",
+                "reference": "af3620d1ae999494d77fcbb772442f966f9a69e6",
                 "shasum": ""
             },
             "require": {
@@ -1463,7 +1461,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/semver/issues",
-                "source": "https://github.com/composer/semver/tree/3.2.9"
+                "source": "https://github.com/composer/semver/tree/main"
             },
             "funding": [
                 {
@@ -1479,7 +1477,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-02-04T13:58:43+00:00"
+            "time": "2022-03-14T11:39:49+00:00"
         },
         {
             "name": "composer/xdebug-handler",
@@ -2939,12 +2937,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "d62a25e0a8ec2efef34d85023cdae489af08a786"
+                "reference": "fef420d8d81c1b5082c07472c83a95be4983db87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d62a25e0a8ec2efef34d85023cdae489af08a786",
-                "reference": "d62a25e0a8ec2efef34d85023cdae489af08a786",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/fef420d8d81c1b5082c07472c83a95be4983db87",
+                "reference": "fef420d8d81c1b5082c07472c83a95be4983db87",
                 "shasum": ""
             },
             "require": {
@@ -3034,7 +3032,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-09T06:54:34+00:00"
+            "time": "2022-03-12T13:32:10+00:00"
         },
         {
             "name": "psr/cache",
@@ -3194,24 +3192,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "57a3432393ef9539465dc9c36d8cf5b045fe0800"
+                "reference": "86b842d48cdaaab1bf3dc24fdc830bf7b58cfcab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/57a3432393ef9539465dc9c36d8cf5b045fe0800",
-                "reference": "57a3432393ef9539465dc9c36d8cf5b045fe0800",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/86b842d48cdaaab1bf3dc24fdc830bf7b58cfcab",
+                "reference": "86b842d48cdaaab1bf3dc24fdc830bf7b58cfcab",
                 "shasum": ""
             },
             "conflict": {
                 "3f/pygmentize": "<1.2",
                 "adodb/adodb-php": "<=5.20.20|>=5.21,<=5.21.3",
                 "akaunting/akaunting": "<2.1.13",
+                "alextselegidis/easyappointments": "<1.4.3",
                 "alterphp/easyadmin-extension-bundle": ">=1.2,<1.2.11|>=1.3,<1.3.1",
                 "amazing/media2click": ">=1,<1.3.3",
                 "amphp/artax": "<1.0.6|>=2,<2.0.6",
                 "amphp/http": "<1.0.1",
                 "amphp/http-client": ">=4,<4.4",
                 "anchorcms/anchor-cms": "<=0.12.7",
+                "andreapollastri/cipi": "<=3.1.15",
                 "api-platform/core": ">=2.2,<2.2.10|>=2.3,<2.3.6",
                 "appwrite/server-ce": "<0.11.1|>=0.12,<0.12.2",
                 "area17/twill": "<1.2.5|>=2,<2.5.3",
@@ -3311,6 +3311,7 @@
                 "froala/wysiwyg-editor": "<3.2.7",
                 "fuel/core": "<1.8.1",
                 "gaoming13/wechat-php-sdk": "<=1.10.2",
+                "genix/cms": "<=1.1.11",
                 "getgrav/grav": "<1.7.31",
                 "getkirby/cms": "<3.5.8",
                 "getkirby/panel": "<2.5.14",
@@ -3377,7 +3378,7 @@
                 "microweber/microweber": "<1.3",
                 "miniorange/miniorange-saml": "<1.4.3",
                 "mittwald/typo3_forum": "<1.2.1",
-                "modx/revolution": "<2.8",
+                "modx/revolution": "<= 2.8.3-pl|<2.8",
                 "monolog/monolog": ">=1.8,<1.12",
                 "moodle/moodle": "<3.9.11|>=3.10-beta,<3.10.8|>=3.11,<3.11.5",
                 "mustache/mustache": ">=2,<2.14.1",
@@ -3429,7 +3430,7 @@
                 "phpunit/phpunit": ">=4.8.19,<4.8.28|>=5.0.10,<5.6.3",
                 "phpwhois/phpwhois": "<=4.2.5",
                 "phpxmlrpc/extras": "<0.6.1",
-                "pimcore/pimcore": "<10.3.2",
+                "pimcore/pimcore": "<=10.3.2",
                 "pocketmine/pocketmine-mp": "<4.0.7",
                 "pressbooks/pressbooks": "<5.18",
                 "prestashop/autoupgrade": ">=4,<4.10.1",
@@ -3458,10 +3459,11 @@
                 "scheb/two-factor-bundle": ">=0,<3.26|>=4,<4.11",
                 "sensiolabs/connect": "<4.2.3",
                 "serluck/phpwhois": "<=4.2.6",
-                "shopware/core": "<=6.4.6",
-                "shopware/platform": "<=6.4.6",
+                "shopware/core": "<=6.4.8.1",
+                "shopware/platform": "<=6.4.8.1",
                 "shopware/production": "<=6.3.5.2",
                 "shopware/shopware": "<5.7.7",
+                "shopware/storefront": "<=6.4.8.1",
                 "showdoc/showdoc": "<=2.10.2",
                 "silverstripe/admin": ">=1,<1.8.1",
                 "silverstripe/assets": ">=1,<1.4.7|>=1.5,<1.5.2",
@@ -3488,7 +3490,7 @@
                 "spipu/html2pdf": "<5.2.4",
                 "spoonity/tcpdf": "<6.2.22",
                 "squizlabs/php_codesniffer": ">=1,<2.8.1|>=3,<3.0.1",
-                "ssddanbrown/bookstack": "<21.12.1",
+                "ssddanbrown/bookstack": "<22.2.3",
                 "stormpath/sdk": ">=0,<9.9.99",
                 "studio-42/elfinder": "<2.1.59",
                 "subrion/cms": "<=4.2.1",
@@ -3524,7 +3526,7 @@
                 "symfony/security-core": ">=2.4,<2.6.13|>=2.7,<2.7.9|>=2.7.30,<2.7.32|>=2.8,<3.4.49|>=4,<4.4.24|>=5,<5.2.9",
                 "symfony/security-csrf": ">=2.4,<2.7.48|>=2.8,<2.8.41|>=3,<3.3.17|>=3.4,<3.4.11|>=4,<4.0.11",
                 "symfony/security-guard": ">=2.8,<3.4.48|>=4,<4.4.23|>=5,<5.2.8",
-                "symfony/security-http": ">=2.3,<2.3.41|>=2.4,<2.7.51|>=2.8,<3.4.48|>=4,<4.4.23|>=5,<5.2.8|>=5.3,<5.3.2",
+                "symfony/security-http": ">=2.3,<2.3.41|>=2.4,<2.7.51|>=2.8,<2.8.50|>=3,<3.4.26|>=4,<4.2.12|>=4.3,<4.3.8|>=4.4,<4.4.7|>=5,<5.0.7|>=5.1,<5.2.8|>=5.3,<5.3.2",
                 "symfony/serializer": ">=2,<2.0.11|>=4.1,<4.4.35|>=5,<5.3.12",
                 "symfony/symfony": ">=2,<3.4.49|>=4,<4.4.35|>=5,<5.3.12|>=5.3.14,<=5.3.14|>=5.4.3,<=5.4.3|>=6.0.3,<=6.0.3",
                 "symfony/translation": ">=2,<2.0.17",
@@ -3644,7 +3646,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-10T00:11:32+00:00"
+            "time": "2022-03-14T19:04:00+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -5059,12 +5061,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "95440409896f90a5f85db07a32b517ecec17fa4c"
+                "reference": "ca5bdf2b6d2b2546b69ee6c74434b89cda697b24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/95440409896f90a5f85db07a32b517ecec17fa4c",
-                "reference": "95440409896f90a5f85db07a32b517ecec17fa4c",
+                "url": "https://api.github.com/repos/symfony/process/zipball/ca5bdf2b6d2b2546b69ee6c74434b89cda697b24",
+                "reference": "ca5bdf2b6d2b2546b69ee6c74434b89cda697b24",
                 "shasum": ""
             },
             "require": {
@@ -5098,7 +5100,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v5.4.5"
+                "source": "https://github.com/symfony/process/tree/5.4"
             },
             "funding": [
                 {
@@ -5114,7 +5116,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-30T18:16:22+00:00"
+            "time": "2022-03-13T20:07:29+00:00"
         },
         {
             "name": "symfony/stopwatch",
@@ -5325,12 +5327,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vimeo/psalm.git",
-                "reference": "510456c7c42a131d6370bea39dc73550ec482a43"
+                "reference": "32f10c392d4cbd697c95de02a1f2e72867540cf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vimeo/psalm/zipball/510456c7c42a131d6370bea39dc73550ec482a43",
-                "reference": "510456c7c42a131d6370bea39dc73550ec482a43",
+                "url": "https://api.github.com/repos/vimeo/psalm/zipball/32f10c392d4cbd697c95de02a1f2e72867540cf3",
+                "reference": "32f10c392d4cbd697c95de02a1f2e72867540cf3",
                 "shasum": ""
             },
             "require": {
@@ -5425,7 +5427,7 @@
                 "issues": "https://github.com/vimeo/psalm/issues",
                 "source": "https://github.com/vimeo/psalm/tree/4.x"
             },
-            "time": "2022-03-07T21:50:20+00:00"
+            "time": "2022-03-14T20:11:19+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -5542,8 +5544,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "gacela-project/gacela": 20,
-        "gacela-project/gacela-env-config-reader": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,
