@@ -1,20 +1,14 @@
 FROM php:8-fpm-alpine as runtime
 
 RUN apk update \
-  && apk add --no-cache curl make coreutils icu-libs icu-dev libzip-dev libxslt-dev php-mysqli php-pdo_mysql postgresql-dev libpng-dev
+  && apk add --no-cache coreutils
 
-RUN NPROC=$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1) \
-    && docker-php-ext-install -j${NPROC} zip intl xsl mysqli pdo_mysql pdo_pgsql gd
-
-FROM runtime AS build
 
 # install composer for building
 RUN echo "$(curl -sS https://composer.github.io/installer.sig) -" > composer-setup.php.sig \
     && curl -sS https://getcomposer.org/installer | tee composer-setup.php | sha384sum -c composer-setup.php.sig \
     && php composer-setup.php && rm composer-setup.php* \
     && chmod +x composer.phar && mv composer.phar /usr/local/bin/composer 
-
-FROM build AS dev
 
 RUN apk add --no-cache $PHPIZE_DEPS 
 
@@ -28,11 +22,11 @@ RUN curl -sS https://xdebug.org/files/xdebug-3.1.4.tgz | tar xz \
 
 RUN apk add --no-cache bash git sudo
 
-ARG USER_ID
+ARG USERID
 ARG USER
 
 # if user with id uid doesnt exist add her
-RUN id -u $USER_ID > /dev/null 2>&1 || adduser -D -s /bin/bash -u $USER_ID $USER \
+RUN id -u $USERID > /dev/null 2>&1 || adduser -D -s /bin/bash -u $USERID $USER \
     && echo "$user  ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 COPY --chown=$USER:$USER bashrc /home/$USER/.bashrc
