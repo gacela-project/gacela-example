@@ -20,6 +20,8 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
+	"postCreateCommand": "cp /usr/share/bash-completion/completions/git ~/git-completion.bash; echo \". ~/git-completion.bash\" >> ~/.bashrc",
+
 	// Uncomment to use the Docker CLI from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
 	// "mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
 

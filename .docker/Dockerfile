@@ -20,7 +20,7 @@ RUN curl -sS https://xdebug.org/files/xdebug-3.1.4.tgz | tar xz \
     && make && make install \
     && docker-php-ext-enable xdebug
 
-RUN apk add --no-cache bash git sudo
+RUN apk add --no-cache bash git sudo git-bash-completion
 
 ARG USERID
 ARG USER
