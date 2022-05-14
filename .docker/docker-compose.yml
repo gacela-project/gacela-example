@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  gacela-example:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        USER: ${USER}
+        USERID: ${USERID}
+    env_file:
+      - .env
+    image: gacela-example
+    hostname: gacela-example
+    working_dir: /workspace
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity
