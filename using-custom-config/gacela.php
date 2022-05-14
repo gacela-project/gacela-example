@@ -3,10 +3,8 @@
 declare(strict_types=1);
 
 use App\CustomConfigExample\Domain\CustomConfigReader;
-use Gacela\Framework\Config\GacelaConfigBuilder\ConfigBuilder;
-use Gacela\Framework\Setup\SetupGacela;
+use Gacela\Framework\Bootstrap\GacelaConfig;
 
-return (new SetupGacela())
-    ->setConfig(static function (ConfigBuilder $configBuilder): void {
-        $configBuilder->add('config/*.custom', '', CustomConfigReader::class);
-    });
+return static function (GacelaConfig $config): void {
+    $config->addAppConfig('config/*.custom', '', CustomConfigReader::class);
+};
