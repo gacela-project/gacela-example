@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/gacela-project/gacela.git",
-                "reference": "5e6f6a383db0b3b7539ece1ed8c6615759e9190f"
+                "reference": "826ded2e22e0bb2844bbca2b76e3db47b9338932"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/5e6f6a383db0b3b7539ece1ed8c6615759e9190f",
-                "reference": "5e6f6a383db0b3b7539ece1ed8c6615759e9190f",
+                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/826ded2e22e0bb2844bbca2b76e3db47b9338932",
+                "reference": "826ded2e22e0bb2844bbca2b76e3db47b9338932",
                 "shasum": ""
             },
             "require": {
@@ -71,9 +71,9 @@
             ],
             "support": {
                 "issues": "https://github.com/gacela-project/gacela/issues",
-                "source": "https://github.com/gacela-project/gacela/tree/master"
+                "source": "https://github.com/gacela-project/gacela/tree/0.18.0"
             },
-            "time": "2022-05-12T21:35:38+00:00"
+            "time": "2022-05-14T13:02:54+00:00"
         },
         {
             "name": "psr/container",
@@ -129,12 +129,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "441c3061fb646284caa7c01789296c1707454c6e"
+                "reference": "18949198428c079e9cbe7be63fd628d74e7f2751"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/441c3061fb646284caa7c01789296c1707454c6e",
-                "reference": "441c3061fb646284caa7c01789296c1707454c6e",
+                "url": "https://api.github.com/repos/symfony/console/zipball/18949198428c079e9cbe7be63fd628d74e7f2751",
+                "reference": "18949198428c079e9cbe7be63fd628d74e7f2751",
                 "shasum": ""
             },
             "require": {
@@ -221,7 +221,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-13T11:09:43+00:00"
+            "time": "2022-05-14T12:51:09+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
