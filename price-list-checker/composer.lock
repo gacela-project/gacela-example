@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0ff6def4c40a2fee63c9f36d233865b9",
+    "content-hash": "7bd369b2179e3468c91e0ddd03ff6ceb",
     "packages": [
         {
             "name": "gacela-project/gacela",
@@ -73,6 +73,70 @@
                 "source": "https://github.com/gacela-project/gacela/tree/0.18.1"
             },
             "time": "2022-05-14T20:27:40+00:00"
+        },
+        {
+            "name": "gacela-project/gacela-cli",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gacela-project/gacela-cli.git",
+                "reference": "032ff03433f50acb8cc2b42adc39d341cfee52c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gacela-project/gacela-cli/zipball/032ff03433f50acb8cc2b42adc39d341cfee52c6",
+                "reference": "032ff03433f50acb8cc2b42adc39d341cfee52c6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "gacela-project/gacela": "^0.18",
+                "php": ">=7.4",
+                "symfony/console": "^5.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.8",
+                "phpstan/phpstan": "^1.5",
+                "phpunit/phpunit": "^9.5",
+                "roave/security-advisories": "dev-latest",
+                "symfony/var-dumper": "^5.4",
+                "vimeo/psalm": "^4.22"
+            },
+            "bin": [
+                "gacela"
+            ],
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "Gacela\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jose Maria Valera Reales",
+                    "email": "chemaclass@outlook.es"
+                },
+                {
+                    "name": "Jesus Valera Reales",
+                    "email": "jesus1902@outlook.com"
+                }
+            ],
+            "description": "Gacela Framework Cli",
+            "homepage": "https://gacela-project.com/",
+            "keywords": [
+                "kernel",
+                "modular",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/gacela-project/gacela-cli/issues",
+                "source": "https://github.com/gacela-project/gacela-cli/tree/0.1.0"
+            },
+            "time": "2022-05-19T17:20:22+00:00"
         },
         {
             "name": "gacela-project/gacela-env-config-reader",
@@ -3171,12 +3235,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "2ed308386e65cafaadd54723f5b57775374c2ae8"
+                "reference": "c491d086242983f784b8af91cbb9de43d3374971"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/2ed308386e65cafaadd54723f5b57775374c2ae8",
-                "reference": "2ed308386e65cafaadd54723f5b57775374c2ae8",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/c491d086242983f784b8af91cbb9de43d3374971",
+                "reference": "c491d086242983f784b8af91cbb9de43d3374971",
                 "shasum": ""
             },
             "conflict": {
@@ -3209,6 +3273,7 @@
                 "bolt/core": "<=4.2",
                 "bottelet/flarepoint": "<2.2.1",
                 "brightlocal/phpwhois": "<=4.2.5",
+                "brotkrueml/codehighlight": "<2.7",
                 "buddypress/buddypress": "<7.2.1",
                 "bugsnag/bugsnag-laravel": ">=2,<2.0.2",
                 "bytefury/crater": "<6.0.2",
@@ -3653,7 +3718,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-11T11:06:18+00:00"
+            "time": "2022-05-16T08:10:11+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -5534,6 +5599,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "gacela-project/gacela": 0,
+        "gacela-project/gacela-cli": 0,
         "gacela-project/gacela-env-config-reader": 20,
         "roave/security-advisories": 20
     },

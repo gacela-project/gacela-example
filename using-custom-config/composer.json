@@ -9,7 +9,8 @@
     ],
     "require": {
         "php": ">=7.4",
-        "gacela-project/gacela": "@stable"
+        "gacela-project/gacela": "@stable",
+        "gacela-project/gacela-cli": "@stable"
     },
     "minimum-stability": "dev",
     "require-dev": {

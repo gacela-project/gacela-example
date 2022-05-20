@@ -1,0 +1,31 @@
+{
+    "description": "An example using gacela-cli",
+    "name": "gacela-project/gacela-example-using-gacela-cli",
+    "type": "project",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "gacela",
+        "example"
+    ],
+    "require": {
+        "php": ">=7.4",
+        "gacela-project/gacela": "@stable",
+        "gacela-project/gacela-cli": "@stable"
+    },
+    "minimum-stability": "dev",
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "symfony/var-dumper": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
+    }
+}

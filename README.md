@@ -3,6 +3,7 @@
 In this repo you can find different examples of usages of Modules using [Gacela Framework](http://gacela-project.com/).
 
 - [Comment Spam Score](comment-spam-score) (Level: easy)
+- [Using Gacela cli](using-gacela-cli) (Level: easy)
 - [Using Custom Config](using-custom-config) (Level: medium)
 - [Gacela in a File](gacela-in-a-file) (Level: medium)
 - [Price List Checker](price-list-checker) (Level: advance)

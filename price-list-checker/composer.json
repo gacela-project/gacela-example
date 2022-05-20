@@ -5,6 +5,7 @@
     "require": {
         "php": ">=7.4",
         "gacela-project/gacela": "@stable",
+        "gacela-project/gacela-cli": "@stable",
         "gacela-project/gacela-env-config-reader": "dev-master",
         "symfony/console": "^5.3"
     },
