@@ -12,12 +12,10 @@ require __DIR__ . '/vendor/autoload.php';
 Gacela::bootstrap(__DIR__);
 
 # OPTION B: without gacela.php
-//$gacelaSetup = (new SetupGacela())
-//    ->setConfig(static function (ConfigBuilder $configBuilder): void {
-//        $configBuilder->add('config/*.custom', '', CustomConfigReader::class);
-//    });
-//
-//Gacela::bootstrap(__DIR__, $gacelaSetup);
+//$configFn = static function (GacelaConfig $config): void {
+//  $config->addAppConfig('config/*.custom', '', CustomConfigReader::class);
+//};
+//Gacela::bootstrap(__DIR__, $configFn);
 
 # script usage: `app.php 1 2 3 4 5`
 # It will start adding from the number specified in the config "base-adder-number = NNN"

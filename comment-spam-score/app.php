@@ -9,9 +9,10 @@ use App\Comment\CommentFacade;
 use Gacela\Framework\Bootstrap\GacelaConfig;
 use Gacela\Framework\Gacela;
 
-Gacela::bootstrap(__DIR__, static function (GacelaConfig $config): void {
+$configFn = static function (GacelaConfig $config): void {
     $config->addAppConfig('config/*.php', 'config/local.php');
-});
+};
+Gacela::bootstrap(__DIR__, $configFn);
 
 $facade = new CommentFacade();
 $score = $facade->getSpamScore('Lorem ipsum!');
