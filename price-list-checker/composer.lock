@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f52077c27d4633a7431610a82cc5a92",
+    "content-hash": "34818bdd7ba908570be6fd8bb6957137",
     "packages": [
         {
             "name": "gacela-project/gacela",
@@ -70,70 +70,6 @@
                 "source": "https://github.com/gacela-project/gacela/tree/0.21.0"
             },
             "time": "2022-05-29T11:52:12+00:00"
-        },
-        {
-            "name": "gacela-project/gacela-cli",
-            "version": "0.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/gacela-project/gacela-cli.git",
-                "reference": "686b22e2a97c9b5d8ad56f2098ce44559184c3de"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/gacela-project/gacela-cli/zipball/686b22e2a97c9b5d8ad56f2098ce44559184c3de",
-                "reference": "686b22e2a97c9b5d8ad56f2098ce44559184c3de",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "gacela-project/gacela": "^0.21",
-                "php": ">=7.4",
-                "symfony/console": "^5.4"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.8",
-                "phpstan/phpstan": "^1.7",
-                "phpunit/phpunit": "^9.5",
-                "roave/security-advisories": "dev-latest",
-                "symfony/var-dumper": "^5.4",
-                "vimeo/psalm": "^4.23"
-            },
-            "bin": [
-                "gacela"
-            ],
-            "type": "project",
-            "autoload": {
-                "psr-4": {
-                    "Gacela\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jose Maria Valera Reales",
-                    "email": "chemaclass@outlook.es"
-                },
-                {
-                    "name": "Jesus Valera Reales",
-                    "email": "jesus1902@outlook.com"
-                }
-            ],
-            "description": "Gacela Framework Cli",
-            "homepage": "https://gacela-project.com/",
-            "keywords": [
-                "kernel",
-                "modular",
-                "php"
-            ],
-            "support": {
-                "issues": "https://github.com/gacela-project/gacela-cli/issues",
-                "source": "https://github.com/gacela-project/gacela-cli/tree/0.2.0"
-            },
-            "time": "2022-06-04T17:38:40+00:00"
         },
         {
             "name": "gacela-project/gacela-env-config-reader",
@@ -5602,7 +5538,6 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "gacela-project/gacela": 0,
-        "gacela-project/gacela-cli": 0,
         "gacela-project/gacela-env-config-reader": 20,
         "roave/security-advisories": 20
     },
