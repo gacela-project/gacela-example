@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Tests\Integration\PriceListChecker;
 
+use App\PriceListChecker\Infrastructure\Command\PriceListCheckerCommand;
 use App\PriceListChecker\Infrastructure\Notifier\Channel\FileGeneratorNotifier;
-use App\PriceListChecker\PriceListCheckerFactory;
 use Gacela\Framework\Gacela;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Input\InputInterface;
@@ -22,8 +22,7 @@ final class PriceListCheckerCommandTest extends TestCase
 
     public function test_generic_regression_test_using_default_db_connection(): void
     {
-        $commandFactory = new PriceListCheckerFactory();
-        $command = $commandFactory->createPriceListCheckerCommand();
+        $command = new PriceListCheckerCommand();
 
         $command->run(
             $this->createStub(InputInterface::class),
