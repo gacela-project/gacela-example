@@ -9,7 +9,7 @@
     ],
     "require": {
         "php": ">=7.4",
-        "gacela-project/gacela": "@stable",
+        "gacela-project/gacela": "dev-master",
         "symfony/http-client": "^5.3"
     },
     "require-dev": {
