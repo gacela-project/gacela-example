@@ -3,19 +3,17 @@
 
 declare(strict_types=1);
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+$dir = dirname(__DIR__);
 
-use App\PriceListChecker\PriceListCheckerFactory;
+require $dir . '/vendor/autoload.php';
+
+use App\PriceListChecker\Infrastructure\Command\PriceListCheckerCommand;
 use Gacela\Framework\Bootstrap\GacelaConfig;
 use Gacela\Framework\Gacela;
 use Symfony\Component\Console\Application;
 
-Gacela::bootstrap(__DIR__, static function (GacelaConfig $config): void {
-    $config->addAppConfig('config/*.php');
-});
-
-$commandFactory = new PriceListCheckerFactory();
+Gacela::bootstrap($dir, GacelaConfig::withPhpConfigDefault());
 
 $application = new Application();
-$application->add($commandFactory->createPriceListCheckerCommand());
+$application->add(new PriceListCheckerCommand());
 $application->run();

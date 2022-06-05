@@ -21,15 +21,7 @@ use Gacela\Framework\AbstractFactory;
  */
 final class PriceListCheckerFactory extends AbstractFactory
 {
-    public function createPriceListCheckerCommand(): PriceListCheckerCommand
-    {
-        return new PriceListCheckerCommand(
-            $this->createPriceListChecker(),
-            $this->createPriceCheckerQueryParamsFactory()
-        );
-    }
-
-    private function createPriceListChecker(): PriceListChecker
+    public function createPriceListChecker(): PriceListChecker
     {
         return new PriceListChecker(
             [
@@ -37,6 +29,11 @@ final class PriceListCheckerFactory extends AbstractFactory
             ],
             $this->createNotifier(),
         );
+    }
+
+    public function createPriceCheckerQueryParamsFactory(): PriceCheckerQueryParamsFactory
+    {
+        return new PriceCheckerQueryParamsFactory(date('Y-m-d'));
     }
 
     private function createFormatPricingErrorChecker(): PriceFormatErrorChecker
@@ -64,11 +61,6 @@ final class PriceListCheckerFactory extends AbstractFactory
     private function createEmailNotifier(): ChannelInterface
     {
         return new EmailNotifier();
-    }
-
-    private function createPriceCheckerQueryParamsFactory(): PriceCheckerQueryParamsFactory
-    {
-        return new PriceCheckerQueryParamsFactory(date('Y-m-d'));
     }
 
     private function getPriceFacade(): PriceFacadeInterface

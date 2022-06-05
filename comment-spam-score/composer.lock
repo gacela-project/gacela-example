@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "399eeeaf50b5ea3899cf27b2cd8f6797",
+    "content-hash": "42c186ba5e60bc4c83278690f35ce10b",
     "packages": [
         {
             "name": "gacela-project/gacela",
-            "version": "0.21.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gacela-project/gacela.git",
-                "reference": "2bbfce4228b24d699031f0e1cac713e0b2d95c63"
+                "reference": "63ca9d211283fa3454dfad80e7317f92eaa4a443"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/2bbfce4228b24d699031f0e1cac713e0b2d95c63",
-                "reference": "2bbfce4228b24d699031f0e1cac713e0b2d95c63",
+                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/63ca9d211283fa3454dfad80e7317f92eaa4a443",
+                "reference": "63ca9d211283fa3454dfad80e7317f92eaa4a443",
                 "shasum": ""
             },
             "require": {
@@ -38,6 +38,7 @@
                 "gacela-project/gacela-env-config-reader": "Allows to read .env config files",
                 "gacela-project/gacela-yaml-config-reader": "Allows to read yml/yaml config files"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -67,9 +68,9 @@
             ],
             "support": {
                 "issues": "https://github.com/gacela-project/gacela/issues",
-                "source": "https://github.com/gacela-project/gacela/tree/0.21.0"
+                "source": "https://github.com/gacela-project/gacela/tree/master"
             },
-            "time": "2022-05-29T11:52:12+00:00"
+            "time": "2022-06-05T18:29:35+00:00"
         },
         {
             "name": "psr/container",
@@ -5575,7 +5576,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "gacela-project/gacela": 0,
+        "gacela-project/gacela": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,
