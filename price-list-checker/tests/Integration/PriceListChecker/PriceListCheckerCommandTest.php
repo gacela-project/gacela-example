@@ -6,7 +6,6 @@ namespace Tests\Integration\PriceListChecker;
 
 use App\PriceListChecker\Infrastructure\Notifier\Channel\FileGeneratorNotifier;
 use App\PriceListChecker\PriceListCheckerFactory;
-use Gacela\Framework\Config;
 use Gacela\Framework\Gacela;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Input\InputInterface;

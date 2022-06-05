@@ -10,14 +10,15 @@
     "require": {
         "php": ">=7.4",
         "gacela-project/gacela": "@stable",
-        "gacela-project/gacela-cli": "@stable"
+        "gacela-project/gacela-cli": "@stable",
+        "gacela-project/gacela-env-config-reader": "dev-master"
     },
     "minimum-stability": "dev",
     "require-dev": {
         "roave/security-advisories": "dev-latest",
-        "symfony/var-dumper": "^5.2",
+        "symfony/var-dumper": "^5.4",
         "phpunit/phpunit": "^9.5",
-        "vimeo/psalm": "^4.6",
+        "vimeo/psalm": "4.*",
         "friendsofphp/php-cs-fixer": "3.*"
     },
     "autoload": {

@@ -16,7 +16,7 @@
     "minimum-stability": "dev",
     "require-dev": {
         "roave/security-advisories": "dev-latest",
-        "symfony/var-dumper": "^5.2"
+        "symfony/var-dumper": "^5.4"
     },
     "autoload": {
         "psr-4": {
