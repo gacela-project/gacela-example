@@ -17,5 +17,3 @@ Gacela::bootstrap($cwd);
 exec('vendor/bin/gacela make:module    App/FullNameCustomModule', $output);
 exec('vendor/bin/gacela make:module -s App/SortNameModule', $output);
 dump($output);
-
-
