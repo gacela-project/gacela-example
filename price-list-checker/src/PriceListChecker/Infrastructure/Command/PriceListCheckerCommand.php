@@ -22,7 +22,12 @@ final class PriceListCheckerCommand extends Command
     {
         $this->setName('prices:check')
             ->setDescription('Compare the selling prices with the base prices and notify if there are some potential errors.')
-            ->addOption('days', null, InputArgument::OPTIONAL, 'Number of days that you will consider in your prices changes');
+            ->addOption(
+                'days',
+                null,
+                InputArgument::OPTIONAL,
+                'Number of days that you will consider in your prices changes'
+            );
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
@@ -32,8 +37,7 @@ final class PriceListCheckerCommand extends Command
         /** @var null|array $options */
         $options = $input->getOptions();
 
-        $checkerQueryParams = $this->getFacade()->createQueryParamsFromArray($options ?? []);
-        $errors = $this->getFacade()->checkPrices($checkerQueryParams);
+        $errors = $this->getFacade()->checkPrices($options ?? []);
         $output->writeln($errors);
 
         return self::SUCCESS;

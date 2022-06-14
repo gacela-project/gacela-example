@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace App\PriceListChecker;
 
 use App\Price\PriceFacade;
-use App\Price\PriceFacadeInterface;
 use Gacela\Framework\AbstractDependencyProvider;
 use Gacela\Framework\Container\Container;
 
@@ -23,7 +22,7 @@ class PriceListCheckerDependencyProvider extends AbstractDependencyProvider
 
     private function addPriceFacade(Container $container): void
     {
-        $container->set(self::FACADE_PRICE, function (Container $container): PriceFacadeInterface {
+        $container->set(self::FACADE_PRICE, function (Container $container) {
             return $container->getLocator()->get(PriceFacade::class);
         });
     }

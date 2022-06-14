@@ -39,12 +39,14 @@ final class PriceFormatErrorCheckerTest extends TestCase
         $checker = new PriceFormatErrorChecker($priceFacade);
         $actual = $checker->checkErrors(new PriceCheckerQueryParams('2021-07-31'));
 
-        $expected = CheckerErrorsResult::withContent(<<<'TXT'
+        $expected = CheckerErrorsResult::withContent(
+            <<<'TXT'
 > Prices with errors:
 Price { productSku: sku-1, price: 10 }
 Price { productSku: sku-2, price: 20 }
 
-TXT);
+TXT
+        );
         self::assertEquals($expected, $actual);
     }
 }

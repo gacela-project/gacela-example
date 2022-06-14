@@ -11,7 +11,7 @@ use App\PriceListChecker\Domain\Notifier\Notifier;
 use App\PriceListChecker\Domain\NotifierInterface;
 use App\PriceListChecker\Domain\PriceListChecker;
 use App\PriceListChecker\Domain\QueryParams\PriceCheckerQueryParamsFactory;
-use App\PriceListChecker\Infrastructure\Command\PriceListCheckerCommand;
+use App\PriceListChecker\Domain\QueryParams\PriceCheckerQueryParamsFactoryInterface;
 use App\PriceListChecker\Infrastructure\Notifier\Channel\EmailNotifier;
 use App\PriceListChecker\Infrastructure\Notifier\Channel\FileGeneratorNotifier;
 use Gacela\Framework\AbstractFactory;
@@ -28,12 +28,8 @@ final class PriceListCheckerFactory extends AbstractFactory
                 $this->createFormatPricingErrorChecker(),
             ],
             $this->createNotifier(),
+            $this->createPriceCheckerQueryParamsFactory()
         );
-    }
-
-    public function createPriceCheckerQueryParamsFactory(): PriceCheckerQueryParamsFactory
-    {
-        return new PriceCheckerQueryParamsFactory(date('Y-m-d'));
     }
 
     private function createFormatPricingErrorChecker(): PriceFormatErrorChecker
@@ -41,6 +37,11 @@ final class PriceListCheckerFactory extends AbstractFactory
         return new PriceFormatErrorChecker(
             $this->getPriceFacade()
         );
+    }
+
+    private function getPriceFacade(): PriceFacadeInterface
+    {
+        return $this->getProvidedDependency(PriceListCheckerDependencyProvider::FACADE_PRICE);
     }
 
     private function createNotifier(): NotifierInterface
@@ -63,8 +64,8 @@ final class PriceListCheckerFactory extends AbstractFactory
         return new EmailNotifier();
     }
 
-    private function getPriceFacade(): PriceFacadeInterface
+    private function createPriceCheckerQueryParamsFactory(): PriceCheckerQueryParamsFactoryInterface
     {
-        return $this->getProvidedDependency(PriceListCheckerDependencyProvider::FACADE_PRICE);
+        return new PriceCheckerQueryParamsFactory(date('Y-m-d'));
     }
 }

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\PriceListChecker\Domain;
 
-use App\Shared\Transfer\PriceCheckerQueryParams;
+use App\PriceListChecker\Domain\QueryParams\PriceCheckerQueryParamsFactoryInterface;
 
 final class PriceListChecker
 {
@@ -13,22 +13,28 @@ final class PriceListChecker
 
     private NotifierInterface $notifier;
 
+    private PriceCheckerQueryParamsFactoryInterface $checkerQueryParamsFactory;
+
     /**
      * @param list<ErrorCheckerInterface> $errorCheckers
      */
     public function __construct(
-        array             $errorCheckers,
-        NotifierInterface $notifier
+        array $errorCheckers,
+        NotifierInterface $notifier,
+        PriceCheckerQueryParamsFactoryInterface $checkerQueryParamsFactory
     ) {
         $this->errorCheckers = $errorCheckers;
         $this->notifier = $notifier;
+        $this->checkerQueryParamsFactory = $checkerQueryParamsFactory;
     }
 
     /**
      * @return list<CheckerErrorsResult>
      */
-    public function checkPrices(PriceCheckerQueryParams $checkerQueryParams): array
+    public function checkPrices(array $options): array
     {
+        $checkerQueryParams = $this->checkerQueryParamsFactory->createFromArray($options);
+
         /** @var list<CheckerErrorsResult> $errors */
         $errors = [];
 

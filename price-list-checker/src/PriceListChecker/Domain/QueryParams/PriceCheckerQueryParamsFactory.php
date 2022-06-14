@@ -6,7 +6,7 @@ namespace App\PriceListChecker\Domain\QueryParams;
 
 use App\Shared\Transfer\PriceCheckerQueryParams;
 
-final class PriceCheckerQueryParamsFactory
+final class PriceCheckerQueryParamsFactory implements PriceCheckerQueryParamsFactoryInterface
 {
     private const DEFAULT_MAX_DAYS = 5;
 

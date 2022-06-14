@@ -37,7 +37,7 @@ final class DbCredentials
         string $username,
         string $password,
         string $characterSet,
-        int    $clientId = 1
+        int $clientId = 1
     ) {
         $this->connection = $connection;
         $this->username = $username;
