@@ -1,0 +1,30 @@
+{
+    "description": "A basic PHP scaffolding",
+    "name": "chemaclass/php-scaffolding",
+    "type": "project",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "scaffolding"
+    ],
+    "require": {
+        "php": ">=7.4",
+        "gacela-project/gacela": "dev-feature/resolve-different-project-namespaces",
+        "chemaclass/gacela-module-example": "dev-master"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "symfony/var-dumper": "^5.4"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "ResolveDifferentNamespaces\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
+    }
+}

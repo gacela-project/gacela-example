@@ -7,6 +7,7 @@ In this repo you can find different examples of usages of Modules using [Gacela 
 - [Using Custom Config](using-custom-config) (Level: medium)
 - [Gacela in a File](gacela-in-a-file) (Level: medium)
 - [Price List Checker](price-list-checker) (Level: advance)
+- [Resolve different namespaces](resolve-different-namespaces) (Level: advance)
 
 ### Basic Gacela structure
 
