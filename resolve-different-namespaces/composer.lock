@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "181151f6ffdedaceaa018ad5219cb7db",
+    "content-hash": "f320f98a42dbc6a6f139d818a19b7ee1",
     "packages": [
         {
             "name": "chemaclass/gacela-module-example",
@@ -12,16 +12,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chemaclass/gacela-module-example.git",
-                "reference": "3229d36219b1082aed19dce29df2de24021fc0e3"
+                "reference": "b12acf0b5bf4c95ef6df17f106898d5cbc9a4901"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chemaclass/gacela-module-example/zipball/3229d36219b1082aed19dce29df2de24021fc0e3",
-                "reference": "3229d36219b1082aed19dce29df2de24021fc0e3",
+                "url": "https://api.github.com/repos/Chemaclass/gacela-module-example/zipball/b12acf0b5bf4c95ef6df17f106898d5cbc9a4901",
+                "reference": "b12acf0b5bf4c95ef6df17f106898d5cbc9a4901",
                 "shasum": ""
             },
             "require": {
-                "gacela-project/gacela": "dev-feature/resolve-different-project-namespaces",
+                "gacela-project/gacela": "dev-master",
                 "php": ">=7.4"
             },
             "require-dev": {
@@ -53,20 +53,20 @@
                 "issues": "https://github.com/Chemaclass/gacela-module-example/issues",
                 "source": "https://github.com/Chemaclass/gacela-module-example/tree/master"
             },
-            "time": "2022-07-05T12:22:23+00:00"
+            "time": "2022-07-06T07:29:37+00:00"
         },
         {
             "name": "gacela-project/gacela",
-            "version": "dev-feature/resolve-different-project-namespaces",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gacela-project/gacela.git",
-                "reference": "c7873558bbca74cb98f3470592f0bc2bd5626eeb"
+                "reference": "8f206e32785a516d84a1e715ab3bf539cdf71fc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/c7873558bbca74cb98f3470592f0bc2bd5626eeb",
-                "reference": "c7873558bbca74cb98f3470592f0bc2bd5626eeb",
+                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/8f206e32785a516d84a1e715ab3bf539cdf71fc4",
+                "reference": "8f206e32785a516d84a1e715ab3bf539cdf71fc4",
                 "shasum": ""
             },
             "require": {
@@ -88,6 +88,7 @@
                 "gacela-project/gacela-yaml-config-reader": "Allows to read yml/yaml config files",
                 "symfony/console": "Allows to use vendor/bin/gacela script"
             },
+            "default-branch": true,
             "bin": [
                 "gacela"
             ],
@@ -120,7 +121,7 @@
             ],
             "support": {
                 "issues": "https://github.com/gacela-project/gacela/issues",
-                "source": "https://github.com/gacela-project/gacela/tree/feature/resolve-different-project-namespaces"
+                "source": "https://github.com/gacela-project/gacela/tree/master"
             },
             "funding": [
                 {
@@ -128,7 +129,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-07-02T15:01:27+00:00"
+            "time": "2022-07-06T07:09:38+00:00"
         }
     ],
     "packages-dev": [

@@ -9,7 +9,7 @@
     ],
     "require": {
         "php": ">=7.4",
-        "gacela-project/gacela": "dev-feature/resolve-different-project-namespaces",
+        "gacela-project/gacela": "dev-master",
         "chemaclass/gacela-module-example": "dev-master"
     },
     "require-dev": {
