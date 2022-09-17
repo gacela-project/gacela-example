@@ -10,6 +10,7 @@
     },
     "require-dev": {
         "ext-pdo": "*",
+        "ext-oci8": "*",
         "roave/security-advisories": "dev-latest",
         "symfony/var-dumper": "^5.4",
         "phpunit/phpunit": "^9.5",
