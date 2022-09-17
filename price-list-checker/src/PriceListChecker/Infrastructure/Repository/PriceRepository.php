@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Price\Infrastructure\Repository;
+namespace App\PriceListChecker\Infrastructure\Repository;
 
-use App\Price\Domain\Repository\PriceRepositoryInterface;
+use App\PriceListChecker\Domain\Repository\PriceRepositoryInterface;
 use App\Shared\Database\DbConnectionInterface;
 use App\Shared\Transfer\PriceCheckerQueryParams;
 use App\Shared\Transfer\PriceTransfer;

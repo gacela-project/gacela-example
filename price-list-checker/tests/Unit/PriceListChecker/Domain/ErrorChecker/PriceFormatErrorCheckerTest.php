@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Unit\PriceListChecker\Domain\ErrorChecker;
 
-use App\Price\PriceFacadeInterface;
+use App\Price\PriceRepositoryInterface;
 use App\PriceListChecker\Domain\CheckerErrorsResult;
 use App\PriceListChecker\Domain\ErrorChecker\PriceFormatErrorChecker;
 use App\Shared\Transfer\PriceCheckerQueryParams;
@@ -16,7 +16,7 @@ final class PriceFormatErrorCheckerTest extends TestCase
     public function test_no_errors(): void
     {
         $checker = new PriceFormatErrorChecker(
-            $this->createStub(PriceFacadeInterface::class)
+            $this->createStub(PriceRepositoryInterface::class)
         );
         $errors = $checker->checkErrors(new PriceCheckerQueryParams('2021-07-31'));
 
@@ -25,7 +25,7 @@ final class PriceFormatErrorCheckerTest extends TestCase
 
     public function test_errors(): void
     {
-        $priceFacade = $this->createStub(PriceFacadeInterface::class);
+        $priceFacade = $this->createStub(PriceRepositoryInterface::class);
         $priceFacade->method('getPricesWithErrors')
             ->willReturn([
                 (new PriceTransfer())

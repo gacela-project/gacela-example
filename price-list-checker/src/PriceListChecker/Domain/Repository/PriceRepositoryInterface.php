@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Price;
+namespace App\PriceListChecker\Domain\Repository;
 
 use App\Shared\Transfer\PriceCheckerQueryParams;
 use App\Shared\Transfer\PriceTransfer;
 
-interface PriceFacadeInterface
+interface PriceRepositoryInterface
 {
     /**
      * @return list<PriceTransfer>

@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace App\PriceListChecker;
 
-use App\Price\PriceFacadeInterface;
 use App\PriceListChecker\Domain\ErrorChecker\PriceFormatErrorChecker;
 use App\PriceListChecker\Domain\Notifier\ChannelInterface;
 use App\PriceListChecker\Domain\Notifier\Notifier;
@@ -14,13 +13,19 @@ use App\PriceListChecker\Domain\QueryParams\PriceCheckerQueryParamsFactory;
 use App\PriceListChecker\Domain\QueryParams\PriceCheckerQueryParamsFactoryInterface;
 use App\PriceListChecker\Infrastructure\Notifier\Channel\EmailNotifier;
 use App\PriceListChecker\Infrastructure\Notifier\Channel\FileGeneratorNotifier;
+use App\PriceListChecker\Infrastructure\Repository\PriceRepository;
 use Gacela\Framework\AbstractFactory;
+use Gacela\Framework\DocBlockResolverAwareTrait;
 
 /**
+ *
+ * @method PriceRepository getRepository()
  * @method PriceListCheckerConfig getConfig()
  */
 final class PriceListCheckerFactory extends AbstractFactory
 {
+    use DocBlockResolverAwareTrait;
+
     public function createPriceListChecker(): PriceListChecker
     {
         return new PriceListChecker(
@@ -35,13 +40,8 @@ final class PriceListCheckerFactory extends AbstractFactory
     private function createFormatPricingErrorChecker(): PriceFormatErrorChecker
     {
         return new PriceFormatErrorChecker(
-            $this->getPriceFacade()
+            $this->getRepository()
         );
-    }
-
-    private function getPriceFacade(): PriceFacadeInterface
-    {
-        return $this->getProvidedDependency(PriceListCheckerDependencyProvider::FACADE_PRICE);
     }
 
     private function createNotifier(): NotifierInterface

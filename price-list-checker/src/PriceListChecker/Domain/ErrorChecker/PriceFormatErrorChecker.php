@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\PriceListChecker\Domain\ErrorChecker;
 
-use App\Price\PriceFacadeInterface;
+use App\PriceListChecker\Domain\Repository\PriceRepositoryInterface;
 use App\PriceListChecker\Domain\CheckerErrorsResult;
 use App\PriceListChecker\Domain\ErrorCheckerInterface;
 use App\Shared\Transfer\PriceCheckerQueryParams;
@@ -12,11 +12,11 @@ use App\Shared\Transfer\PriceTransfer;
 
 final class PriceFormatErrorChecker implements ErrorCheckerInterface
 {
-    private PriceFacadeInterface $priceFacade;
+    private PriceRepositoryInterface $priceRepository;
 
-    public function __construct(PriceFacadeInterface $priceFacade)
+    public function __construct(PriceRepositoryInterface  $priceRepository)
     {
-        $this->priceFacade = $priceFacade;
+        $this->priceRepository = $priceRepository;
     }
 
     public function checkErrors(PriceCheckerQueryParams $checkerQueryParams): CheckerErrorsResult
@@ -32,7 +32,7 @@ final class PriceFormatErrorChecker implements ErrorCheckerInterface
      */
     private function buildErrors(PriceCheckerQueryParams $checkerQueryParams): array
     {
-        $prices = $this->priceFacade->getPricesWithErrors($checkerQueryParams);
+        $prices = $this->priceRepository->getPricesWithErrors($checkerQueryParams);
 
         if (empty($prices)) {
             return [];
