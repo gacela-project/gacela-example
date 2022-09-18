@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/gacela-project/gacela.git",
-                "reference": "d72f45c1b9061bbbf7a7eac1be76811dcfb643cc"
+                "reference": "4fa241f54696685dcb4d285533dbe8dc78a24d08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/d72f45c1b9061bbbf7a7eac1be76811dcfb643cc",
-                "reference": "d72f45c1b9061bbbf7a7eac1be76811dcfb643cc",
+                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/4fa241f54696685dcb4d285533dbe8dc78a24d08",
+                "reference": "4fa241f54696685dcb4d285533dbe8dc78a24d08",
                 "shasum": ""
             },
             "require": {
@@ -73,7 +73,7 @@
             ],
             "support": {
                 "issues": "https://github.com/gacela-project/gacela/issues",
-                "source": "https://github.com/gacela-project/gacela/tree/master"
+                "source": "https://github.com/gacela-project/gacela/tree/0.25.0"
             },
             "funding": [
                 {
@@ -81,7 +81,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-09-17T10:37:30+00:00"
+            "time": "2022-09-18T14:57:13+00:00"
         },
         {
             "name": "psr/container",

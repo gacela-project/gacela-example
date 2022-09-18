@@ -19,7 +19,6 @@ use Gacela\Framework\DocBlockResolverAwareTrait;
 
 /**
  * @method PriceRepository getRepository()
- * @method PriceConfig getConfig()
  */
 final class PriceFactory extends AbstractFactory
 {
