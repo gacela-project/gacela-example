@@ -7,7 +7,7 @@ $dir = dirname(__DIR__);
 
 require $dir . '/vendor/autoload.php';
 
-use App\PriceListChecker\Infrastructure\Command\PriceListCheckerCommand;
+use App\Price\Infrastructure\Command\PriceListCheckerCommand;
 use Gacela\Framework\Bootstrap\GacelaConfig;
 use Gacela\Framework\Gacela;
 use Symfony\Component\Console\Application;

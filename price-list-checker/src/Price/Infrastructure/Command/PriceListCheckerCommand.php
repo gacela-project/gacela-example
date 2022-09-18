@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\PriceListChecker\Infrastructure\Command;
+namespace App\Price\Infrastructure\Command;
 
-use App\PriceListChecker\PriceListCheckerFacade;
+use App\Price\PriceFacade;
 use Gacela\Framework\DocBlockResolverAwareTrait;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -12,7 +12,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * @method PriceListCheckerFacade getFacade()
+ * @method PriceFacade getFacade()
  */
 final class PriceListCheckerCommand extends Command
 {

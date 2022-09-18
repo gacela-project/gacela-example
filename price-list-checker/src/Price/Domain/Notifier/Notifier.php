@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\PriceListChecker\Domain\Notifier;
+namespace App\Price\Domain\Notifier;
 
-use App\PriceListChecker\Domain\CheckerErrorsResult;
-use App\PriceListChecker\Domain\NotifierInterface;
+use App\Price\Domain\CheckerErrorsResult;
+use App\Price\Domain\NotifierInterface;
 
 final class Notifier implements NotifierInterface
 {

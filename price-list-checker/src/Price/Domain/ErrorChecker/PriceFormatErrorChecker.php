@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\PriceListChecker\Domain\ErrorChecker;
+namespace App\Price\Domain\ErrorChecker;
 
-use App\PriceListChecker\Domain\Repository\PriceRepositoryInterface;
-use App\PriceListChecker\Domain\CheckerErrorsResult;
-use App\PriceListChecker\Domain\ErrorCheckerInterface;
+use App\Price\Domain\Repository\PriceRepositoryInterface;
+use App\Price\Domain\CheckerErrorsResult;
+use App\Price\Domain\ErrorCheckerInterface;
 use App\Shared\Transfer\PriceCheckerQueryParams;
 use App\Shared\Transfer\PriceTransfer;
 

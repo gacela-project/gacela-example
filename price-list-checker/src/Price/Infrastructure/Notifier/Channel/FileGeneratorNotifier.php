@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\PriceListChecker\Infrastructure\Notifier\Channel;
+namespace App\Price\Infrastructure\Notifier\Channel;
 
-use App\PriceListChecker\Domain\CheckerErrorsResult;
-use App\PriceListChecker\Domain\Notifier\ChannelInterface;
+use App\Price\Domain\CheckerErrorsResult;
+use App\Price\Domain\Notifier\ChannelInterface;
 
 final class FileGeneratorNotifier implements ChannelInterface
 {

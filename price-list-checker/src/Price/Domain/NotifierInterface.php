@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\PriceListChecker\Domain;
+namespace App\Price\Domain;
 
 interface NotifierInterface
 {

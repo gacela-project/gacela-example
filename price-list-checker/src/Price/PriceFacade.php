@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace App\PriceListChecker;
+namespace App\Price;
 
-use App\PriceListChecker\Domain\CheckerErrorsResult;
+use App\Price\Domain\CheckerErrorsResult;
 use Gacela\Framework\AbstractFacade;
 
 /**
- * @method PriceListCheckerFactory getFactory()
+ * @method PriceFactory getFactory()
  */
-final class PriceListCheckerFacade extends AbstractFacade
+final class PriceFacade extends AbstractFacade
 {
     /**
      * @return list<CheckerErrorsResult>

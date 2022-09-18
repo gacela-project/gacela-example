@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\PriceListChecker\Domain\Notifier;
+namespace App\Price\Domain\Notifier;
 
-use App\PriceListChecker\Domain\CheckerErrorsResult;
+use App\Price\Domain\CheckerErrorsResult;
 
 interface ChannelInterface
 {

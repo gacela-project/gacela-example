@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\PriceListChecker\Domain;
+namespace App\Price\Domain;
 
-use App\PriceListChecker\Domain\QueryParams\PriceCheckerQueryParamsFactoryInterface;
+use App\Price\Domain\QueryParams\PriceCheckerQueryParamsFactoryInterface;
 
 final class PriceListChecker
 {

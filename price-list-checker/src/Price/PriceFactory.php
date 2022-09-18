@@ -2,27 +2,26 @@
 
 declare(strict_types=1);
 
-namespace App\PriceListChecker;
+namespace App\Price;
 
-use App\PriceListChecker\Domain\ErrorChecker\PriceFormatErrorChecker;
-use App\PriceListChecker\Domain\Notifier\ChannelInterface;
-use App\PriceListChecker\Domain\Notifier\Notifier;
-use App\PriceListChecker\Domain\NotifierInterface;
-use App\PriceListChecker\Domain\PriceListChecker;
-use App\PriceListChecker\Domain\QueryParams\PriceCheckerQueryParamsFactory;
-use App\PriceListChecker\Domain\QueryParams\PriceCheckerQueryParamsFactoryInterface;
-use App\PriceListChecker\Infrastructure\Notifier\Channel\EmailNotifier;
-use App\PriceListChecker\Infrastructure\Notifier\Channel\FileGeneratorNotifier;
-use App\PriceListChecker\Infrastructure\Repository\PriceRepository;
+use App\Price\Domain\ErrorChecker\PriceFormatErrorChecker;
+use App\Price\Domain\Notifier\ChannelInterface;
+use App\Price\Domain\Notifier\Notifier;
+use App\Price\Domain\NotifierInterface;
+use App\Price\Domain\PriceListChecker;
+use App\Price\Domain\QueryParams\PriceCheckerQueryParamsFactory;
+use App\Price\Domain\QueryParams\PriceCheckerQueryParamsFactoryInterface;
+use App\Price\Infrastructure\Notifier\Channel\EmailNotifier;
+use App\Price\Infrastructure\Notifier\Channel\FileGeneratorNotifier;
+use App\Price\Infrastructure\Repository\PriceRepository;
 use Gacela\Framework\AbstractFactory;
 use Gacela\Framework\DocBlockResolverAwareTrait;
 
 /**
- *
  * @method PriceRepository getRepository()
- * @method PriceListCheckerConfig getConfig()
+ * @method PriceConfig getConfig()
  */
-final class PriceListCheckerFactory extends AbstractFactory
+final class PriceFactory extends AbstractFactory
 {
     use DocBlockResolverAwareTrait;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\PriceListChecker\Domain\QueryParams;
+namespace App\Price\Domain\QueryParams;
 
 use App\Shared\Transfer\PriceCheckerQueryParams;
 
