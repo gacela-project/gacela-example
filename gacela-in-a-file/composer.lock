@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/gacela-project/gacela.git",
-                "reference": "4fa241f54696685dcb4d285533dbe8dc78a24d08"
+                "reference": "8f94e1345d781cc466d3db5c9f389c7d1a360e62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/4fa241f54696685dcb4d285533dbe8dc78a24d08",
-                "reference": "4fa241f54696685dcb4d285533dbe8dc78a24d08",
+                "url": "https://api.github.com/repos/gacela-project/gacela/zipball/8f94e1345d781cc466d3db5c9f389c7d1a360e62",
+                "reference": "8f94e1345d781cc466d3db5c9f389c7d1a360e62",
                 "shasum": ""
             },
             "require": {
@@ -80,7 +80,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-09-18T14:57:13+00:00"
+            "time": "2022-09-18T18:30:37+00:00"
         }
     ],
     "packages-dev": [
@@ -876,5 +876,5 @@
         "php": ">=7.4"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
