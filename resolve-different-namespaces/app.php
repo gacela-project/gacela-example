@@ -10,7 +10,7 @@ use GacelaModuleExample\Shared\CustomerName;
 
 require __DIR__ . '/vendor/autoload.php';
 
-Gacela::bootstrap(__DIR__, function (GacelaConfig $config) {
+Gacela::bootstrap(__DIR__, static function (GacelaConfig $config) {
     $config->addAppConfig('config/default.php');
     $config->setProjectNamespaces([
         'ResolveDifferentNamespaces',
