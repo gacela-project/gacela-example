@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": ">=7.4",
-        "gacela-project/gacela": "dev-master",
+        "gacela-project/gacela": "@stable",
         "symfony/console": "^5.4"
     },
     "minimum-stability": "dev",

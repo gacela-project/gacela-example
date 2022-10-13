@@ -1,8 +1,4 @@
-*.cache
-config/local.php
-
-.idea/
 .gacela/
-data/
-coverage/
 vendor/
+
+composer.lock
