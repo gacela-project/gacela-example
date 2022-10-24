@@ -1,4 +1,6 @@
+.idea/
 .gacela/
 vendor/
 
+*.cache
 composer.lock
