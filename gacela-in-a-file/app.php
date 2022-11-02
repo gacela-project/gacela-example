@@ -14,6 +14,7 @@ use Gacela\Framework\AbstractFacade;
 use Gacela\Framework\AbstractFactory;
 use Gacela\Framework\ClassResolver\GlobalInstance\AnonymousGlobal;
 use Gacela\Framework\Container\Container;
+use Gacela\Framework\Gacela;
 
 $contextName = basename(__FILE__, '.php');
 
@@ -83,6 +84,8 @@ AnonymousGlobal::addGlobal(
         }
     }
 );
+
+Gacela::bootstrap(__DIR__);
 
 $facade = new class() extends AbstractFacade {
     public function getConfigValues(): array
