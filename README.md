@@ -1,6 +1,6 @@
 # Gacela Examples
 
-In this repo you can find different examples of usages of Modules using [Gacela Framework](http://gacela-project.com/).
+In this repo you can find different examples of usages of Modules using [Gacela](http://gacela-project.com/):
 
 - [Comment Spam Score](comment-spam-score) (Level: easy)
 - [Using Gacela cli](using-gacela-cli) (Level: easy)
@@ -9,29 +9,26 @@ In this repo you can find different examples of usages of Modules using [Gacela 
 - [Price List Checker](price-list-checker) (Level: advance)
 - [Resolve different namespaces](resolve-different-namespaces) (Level: advance)
 
-### Basic Gacela structure
+### Basic structure of a module using Gacela
 
 ```bash
 application-name
 ├── gacela.php
-├── config // Default config behaviour. You can change it in `gacela.php`
-│   ├── local.php
-│   └── default.php
+├── config
+│   └── ...
 │
 ├── src
-│   ├── ExampleModuleWithoutPrefix
-│   │   ├── Domain
-│   │   │   └── YourLogicClass.php
-│   │   ├── Config.php
-│   │   ├── Facade.php
-│   │   └── Factory.php
-│   │
-│   └── ExampleModuleWithPrefix
+│   └── ExampleModule
 │       ├── Domain
-│       │   └── YourLogicClass.php
-│       ├── ExampleModuleWithPrefixConfig.php
-│       ├── ExampleModuleWithPrefixFacade.php
-│       └── ExampleModuleWithPrefixFactory.php
+│       │   └── ...
+│       ├── Application
+│       │   └── ...
+│       ├── Infrastructure
+│       │   └── ...
+│       ├── Config.php
+│       ├── DependencyProvider.php
+│       ├── Facade.php
+│       └── Factory.php
 │
 ├── tests
 │   └── ...
