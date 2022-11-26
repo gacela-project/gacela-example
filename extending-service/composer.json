@@ -1,0 +1,27 @@
+{
+    "type": "project",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "scaffolding"
+    ],
+    "require": {
+        "php": ">=7.4",
+        "gacela-project/gacela": "@stable"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "symfony/var-dumper": "^5.4"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "ExtendingService\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
+    }
+}

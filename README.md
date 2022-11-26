@@ -8,6 +8,7 @@ In this repo you can find different examples of usages of Modules using [Gacela]
 - [Gacela in a File](gacela-in-a-file) (Level: medium)
 - [Price List Checker](price-list-checker) (Level: advance)
 - [Resolve different namespaces](resolve-different-namespaces) (Level: advance)
+- [Extending a service](extending-service) (Level: advance)
 
 ### Basic structure of a module using Gacela
 
