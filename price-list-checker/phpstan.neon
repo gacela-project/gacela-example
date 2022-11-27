@@ -1,0 +1,12 @@
+includes:
+    - phpstan-baseline.neon
+    - vendor/gacela-project/phpstan-extension/extension.neon
+
+parameters:
+    level: max
+    paths:
+        - %currentWorkingDirectory%/src/
+
+    gacela:
+        sameLevelModulesNamespace: App\
+        excludedNamespaces: [App\Shared]

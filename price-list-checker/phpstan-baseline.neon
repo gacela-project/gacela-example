@@ -1,0 +1,126 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Property App\\\\Price\\\\Domain\\\\Notifier\\\\Notifier\\:\\:\\$channels \\(array\\<int, App\\\\Price\\\\Domain\\\\Notifier\\\\ChannelInterface\\>\\) does not accept array\\<int\\|string, App\\\\Price\\\\Domain\\\\Notifier\\\\ChannelInterface\\>\\.$#"
+			count: 1
+			path: src/Price/Domain/Notifier/Notifier.php
+
+		-
+			message: "#^Method App\\\\Price\\\\Domain\\\\PriceListChecker\\:\\:checkPrices\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Price/Domain/PriceListChecker.php
+
+		-
+			message: "#^Method App\\\\Price\\\\Domain\\\\QueryParams\\\\PriceCheckerQueryParamsFactory\\:\\:createFromArray\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Price/Domain/QueryParams/PriceCheckerQueryParamsFactory.php
+
+		-
+			message: "#^Method App\\\\Price\\\\Domain\\\\QueryParams\\\\PriceCheckerQueryParamsFactory\\:\\:extractMinLastDate\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Price/Domain/QueryParams/PriceCheckerQueryParamsFactory.php
+
+		-
+			message: "#^Parameter \\#1 \\$object of function date_sub expects DateTime, DateTime\\|false given\\.$#"
+			count: 1
+			path: src/Price/Domain/QueryParams/PriceCheckerQueryParamsFactory.php
+
+		-
+			message: "#^Parameter \\#2 \\$interval of function date_sub expects DateInterval, DateInterval\\|false given\\.$#"
+			count: 1
+			path: src/Price/Domain/QueryParams/PriceCheckerQueryParamsFactory.php
+
+		-
+			message: "#^Method App\\\\Price\\\\Domain\\\\QueryParams\\\\PriceCheckerQueryParamsFactoryInterface\\:\\:createFromArray\\(\\) has parameter \\$params with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Price/Domain/QueryParams/PriceCheckerQueryParamsFactoryInterface.php
+
+		-
+			message: "#^PHPDoc tag @var for variable \\$options has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Price/Infrastructure/Command/PriceListCheckerCommand.php
+
+		-
+			message: "#^Parameter \\#1 \\$stream of function fclose expects resource, resource\\|false given\\.$#"
+			count: 1
+			path: src/Price/Infrastructure/Notifier/Channel/FileGeneratorNotifier.php
+
+		-
+			message: "#^Parameter \\#1 \\$stream of function fwrite expects resource, resource\\|false given\\.$#"
+			count: 1
+			path: src/Price/Infrastructure/Notifier/Channel/FileGeneratorNotifier.php
+
+		-
+			message: "#^Offset 'currency' on array\\{id\\: int, product_sku\\: string, currency\\: string, description\\: string, price\\: int\\} on left side of \\?\\? always exists and is not nullable\\.$#"
+			count: 1
+			path: src/Price/Infrastructure/Repository/PriceRepository.php
+
+		-
+			message: "#^Offset 'description' on array\\{id\\: int, product_sku\\: string, currency\\: string, description\\: string, price\\: int\\} on left side of \\?\\? always exists and is not nullable\\.$#"
+			count: 1
+			path: src/Price/Infrastructure/Repository/PriceRepository.php
+
+		-
+			message: "#^Offset 'id' on array\\{id\\: int, product_sku\\: string, currency\\: string, description\\: string, price\\: int\\} on left side of \\?\\? always exists and is not nullable\\.$#"
+			count: 1
+			path: src/Price/Infrastructure/Repository/PriceRepository.php
+
+		-
+			message: "#^Offset 'price' on array\\{id\\: int, product_sku\\: string, currency\\: string, description\\: string, price\\: int\\} on left side of \\?\\? always exists and is not nullable\\.$#"
+			count: 1
+			path: src/Price/Infrastructure/Repository/PriceRepository.php
+
+		-
+			message: "#^Offset 'product_sku' on array\\{id\\: int, product_sku\\: string, currency\\: string, description\\: string, price\\: int\\} on left side of \\?\\? always exists and is not nullable\\.$#"
+			count: 1
+			path: src/Price/Infrastructure/Repository/PriceRepository.php
+
+		-
+			message: "#^Method App\\\\Price\\\\PriceFacade\\:\\:checkPrices\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Price/PriceFacade.php
+
+		-
+			message: "#^Method App\\\\Shared\\\\Database\\\\DbConnectionInterface\\:\\:query\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Shared/Database/DbConnectionInterface.php
+
+		-
+			message: "#^Method App\\\\Shared\\\\Database\\\\DbCredentials\\:\\:fromArray\\(\\) has parameter \\$array with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Shared/Database/DbCredentials.php
+
+		-
+			message: "#^Method App\\\\Shared\\\\Database\\\\FakeConnection\\:\\:query\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Shared/Database/FakeConnection.php
+
+		-
+			message: "#^Method App\\\\Shared\\\\Database\\\\MySqlConnection\\:\\:query\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Shared/Database/MySqlConnection.php
+
+		-
+			message: "#^Method App\\\\Shared\\\\Database\\\\OracleConnection\\:\\:query\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Shared/Database/OracleConnection.php
+
+		-
+			message: "#^Parameter \\#1 \\$statement of function oci_execute expects resource, resource\\|false given\\.$#"
+			count: 1
+			path: src/Shared/Database/OracleConnection.php
+
+		-
+			message: "#^Parameter \\#1 \\$statement of function oci_fetch_all expects resource, resource\\|false given\\.$#"
+			count: 1
+			path: src/Shared/Database/OracleConnection.php
+
+		-
+			message: "#^Parameter \\#1 \\$string of function trim expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/Shared/Database/OracleConnection.php
+
+		-
+			message: "#^Parameter \\#4 \\$limit of function oci_fetch_all expects int, null given\\.$#"
+			count: 1
+			path: src/Shared/Database/OracleConnection.php
