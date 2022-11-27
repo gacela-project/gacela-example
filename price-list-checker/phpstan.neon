@@ -8,5 +8,5 @@ parameters:
         - %currentWorkingDirectory%/src/
 
     gacela:
-        sameLevelModulesNamespace: App\
+        modulesNamespace: App\
         excludedNamespaces: [App\Shared]
