@@ -1,7 +1,4 @@
 {
-    "description": "A study case of a modular application using Gacela.",
-    "name": "gacela-project/price-list-checker",
-    "type": "project",
     "require": {
         "php": ">=7.4",
         "gacela-project/gacela": "^0.32",
@@ -15,7 +12,7 @@
         "phpstan/phpstan": "^1.9",
         "vimeo/psalm": "4.*",
         "friendsofphp/php-cs-fixer": "3.*",
-        "gacela-project/phpstan-extension": "dev-master"
+        "gacela-project/phpstan-extension": "0.2"
     },
     "autoload": {
         "psr-4": {
@@ -47,6 +44,5 @@
         "allow-plugins": {
             "composer/package-versions-deprecated": true
         }
-    },
-    "minimum-stability": "dev"
+    }
 }

@@ -1,18 +1,9 @@
 {
-    "description": "A basic PHP scaffolding",
-    "name": "chemaclass/php-scaffolding",
-    "type": "project",
-    "license": "MIT",
-    "keywords": [
-        "php",
-        "scaffolding"
-    ],
     "require": {
         "php": ">=7.4",
         "gacela-project/gacela": "@stable",
         "gacela-project/gacela-env-config-reader": "dev-master"
     },
-    "minimum-stability": "dev",
     "require-dev": {
         "roave/security-advisories": "dev-latest",
         "symfony/var-dumper": "^5.4",

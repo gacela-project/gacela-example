@@ -1,12 +1,4 @@
 {
-    "description": "A basic PHP scaffolding",
-    "name": "chemaclass/php-scaffolding",
-    "type": "project",
-    "license": "MIT",
-    "keywords": [
-        "php",
-        "scaffolding"
-    ],
     "require": {
         "php": ">=7.4",
         "gacela-project/gacela": "@stable",

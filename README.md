@@ -6,9 +6,9 @@ In this repo you can find different examples of usages of Modules using [Gacela]
 - [Using Gacela cli](using-gacela-cli) (Level: easy)
 - [Using Custom Config](using-custom-config) (Level: medium)
 - [Gacela in a File](gacela-in-a-file) (Level: medium)
-- [Price List Checker](price-list-checker) (Level: advance)
-- [Resolve different namespaces](resolve-different-namespaces) (Level: advance)
-- [Extending a service](extending-service) (Level: advance)
+- [Price List Checker](price-list-checker) (Level: advanced)
+- [Resolve different namespaces](resolve-different-namespaces) (Level: advanced)
+- [Extending a service](extending-service) (Level: advanced)
 
 ### Basic structure of a module using Gacela
 
