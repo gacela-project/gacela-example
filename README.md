@@ -43,6 +43,16 @@ You can check the full documentation in the official [website](https://gacela-pr
 
 ### Run the examples
 
-Run the examples either locally or dockerized. 
+```bash
+git clone https://github.com/gacela-project/gacela-example.git
+cd gacela-example 
 
-> Check the [contributing](.github/CONTRIBUTING.md) page for detailed documentation about the dockerized option.
+# enter the example project, eg 'gacela-in-a-file'
+cd gacela-in-a-file
+
+# install dependencies (eg 'gacela' 😉)
+composer install
+
+# run example
+php app.php
+```
