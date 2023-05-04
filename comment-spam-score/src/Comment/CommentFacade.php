@@ -7,13 +7,13 @@ namespace App\Comment;
 use Gacela\Framework\AbstractFacade;
 
 /**
- * @method CommentFactory getFactory()
+ * @method static CommentFactory getFactory()
  */
 final class CommentFacade extends AbstractFacade
 {
-    public function getSpamScore(string $comment): int
+    public static function getSpamScore(string $comment): int
     {
-        return $this->getFactory()
+        return self::getFactory()
             ->createSpamChecker()
             ->getSpamScore($comment);
     }

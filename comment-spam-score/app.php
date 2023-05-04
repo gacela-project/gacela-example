@@ -11,7 +11,6 @@ use Gacela\Framework\Gacela;
 
 Gacela::bootstrap(__DIR__, GacelaConfig::withPhpConfigDefault());
 
-$facade = new CommentFacade();
-$score = $facade->getSpamScore('Lorem ipsum!');
+$score = CommentFacade::getSpamScore('Lorem ipsum!');
 
 echo sprintf('Spam Score: %d', $score) . PHP_EOL;
