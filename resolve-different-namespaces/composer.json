@@ -1,8 +1,8 @@
 {
     "require": {
-        "php": ">=7.4",
+        "php": ">=8.0",
         "gacela-project/gacela": "@stable",
-        "chemaclass/gacela-module-example": "dev-master"
+        "chemaclass/gacela-module-example": "dev-main"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
