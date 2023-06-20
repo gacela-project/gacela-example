@@ -9,7 +9,7 @@ use App\Comment\CommentFacade;
 use Gacela\Framework\Bootstrap\GacelaConfig;
 use Gacela\Framework\Gacela;
 
-Gacela::bootstrap(__DIR__, GacelaConfig::withPhpConfigDefault());
+Gacela::bootstrap(__DIR__, GacelaConfig::defaultPhpConfig());
 
 $score = CommentFacade::getSpamScore('Lorem ipsum!');
 

@@ -12,7 +12,7 @@ use Gacela\Framework\Bootstrap\GacelaConfig;
 use Gacela\Framework\Gacela;
 use Symfony\Component\Console\Application;
 
-Gacela::bootstrap($dir, GacelaConfig::withPhpConfigDefault());
+Gacela::bootstrap($dir, GacelaConfig::defaultPhpConfig());
 
 $application = new Application();
 $application->add(new PriceListCheckerCommand());

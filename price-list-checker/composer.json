@@ -1,7 +1,7 @@
 {
     "require": {
         "php": ">=7.4",
-        "gacela-project/gacela": "^0.32",
+        "gacela-project/gacela": "^1.4",
         "symfony/console": "^5.4"
     },
     "require-dev": {
@@ -12,7 +12,7 @@
         "phpstan/phpstan": "^1.9",
         "vimeo/psalm": "4.*",
         "friendsofphp/php-cs-fixer": "3.*",
-        "gacela-project/phpstan-extension": "0.2"
+        "gacela-project/phpstan-extension": "0.3"
     },
     "autoload": {
         "psr-4": {

@@ -2,7 +2,7 @@
     "require": {
         "php": ">=7.4",
         "gacela-project/gacela": "@stable",
-        "gacela-project/gacela-env-config-reader": "dev-master"
+        "gacela-project/gacela-env-config-reader": "dev-main"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
