@@ -1,6 +1,6 @@
 {
     "require": {
-        "php": ">=8.0",
+        "php": ">=8.1",
         "gacela-project/gacela": "@stable",
         "chemaclass/gacela-module-example": "dev-main"
     },
@@ -16,6 +16,9 @@
     "config": {
         "allow-plugins": {
             "composer/package-versions-deprecated": true
+        },
+        "platform": {
+            "php": "8.1"
         }
     }
 }

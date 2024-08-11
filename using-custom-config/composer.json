@@ -1,6 +1,6 @@
 {
     "require": {
-        "php": ">=7.4",
+        "php": ">=8.1",
         "gacela-project/gacela": "@stable",
         "gacela-project/gacela-env-config-reader": "dev-main"
     },
@@ -39,6 +39,9 @@
     "config": {
         "allow-plugins": {
             "composer/package-versions-deprecated": true
+        },
+        "platform": {
+            "php": "8.1"
         }
     }
 }

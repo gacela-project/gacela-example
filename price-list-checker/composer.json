@@ -1,6 +1,6 @@
 {
     "require": {
-        "php": ">=7.4",
+        "php": ">=8.1",
         "gacela-project/gacela": "^1.4",
         "symfony/console": "^5.4"
     },
@@ -12,7 +12,7 @@
         "phpstan/phpstan": "^1.9",
         "vimeo/psalm": "4.*",
         "friendsofphp/php-cs-fixer": "3.*",
-        "gacela-project/phpstan-extension": "0.3"
+        "gacela-project/phpstan-extension": "0.4"
     },
     "autoload": {
         "psr-4": {
@@ -43,6 +43,9 @@
     "config": {
         "allow-plugins": {
             "composer/package-versions-deprecated": true
+        },
+        "platform": {
+            "php": "8.1"
         }
     }
 }
